@@ -1,0 +1,137 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/search for icons options
+
+title: "诗往哥导航"
+subtitle: "shiwange"
+logo: "logo.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">Bulma</a>, <a href="https://vuejs.org/">Vue.js</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+
+# Optional theme customization
+theme: default
+
+columns: "3"
+
+defaults:
+  layout: list
+
+# Optional message
+message:
+  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  title: "👋 欢迎 !"
+  content: "当全世界抛弃你时，你身上有上亿个细胞都为你而活。"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "Contribute!"
+    icon: "fab fa-github"
+    url: "https://github.com/bastienwirtz/homer"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Documentation"
+    icon: "fas fa-book"
+    url: "https://github.com/bastienwirtz/homer/blob/main/README.md#table-of-contents"
+  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
+  # see url field and assets/additional-page.yml.dist used in this example:
+  - name: "another page!"
+    icon: "fas fa-file-alt"
+    url: "#additional-page" 
+
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "基础教育"
+    icon: "fa-solid fa-bookmark"
+    class: ""
+    items:
+      - name: "义务教育课程标准"
+        icon: "fa-solid fa-book"
+        url: ""
+        quick:
+          - name: "人民教育出版社"
+            url: "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+          - name: "教育部"
+            url: "https://www.gov.cn/zhengce/zhengceku/2022-04/21/content_5686535.htm"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+        
+      - name: "普通高中课程标准"
+        icon: "fa-solid fa-book"
+        url: ""
+        quick:
+          - name: "人民教育出版社"
+            url: "https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+          - name: "教育部"
+            url: "http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+      - name: "电子教材"
+        icon: "fa-solid fa-book"
+        url: ""
+        quick:
+          - name: "人民教育出版社"
+            url: "https://jc.pep.com.cn/"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+          - name: "智慧中小学（多版本）"
+            url: "https://basic.smartedu.cn/tchMaterial"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+      - name: "题库资源"
+        icon: "fa-solid fa-file-word"
+        url: ""
+        quick:
+          - name: "组卷网（学科网）"
+            url: "https://zujuan.xkw.com/"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+          - name: "九科星（金太阳）"
+            url: "https://www.jkxjxw.com/"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+
+  - name: "学科学习"
+    icon: "fa-solid fa-video"
+    class: "highlight-purple"
+    items: 
+      - name: "语文"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "免费系统课"
+        tag: "高中"
+        url: ""
+        quick:
+          - name: "奇哥"
+            url: "https://space.bilibili.com/39737405"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+
+  - name: "高等教育与升学"
+    icon: "fa-solid fa-graduation-cap"
+    class: "highlight-inverted"
+    items:
+      - name: "志愿参考"
+        icon: "fa-solid fa-link"
+        tag: ""
+        url: ""
+        quick:
+          - name: "阳光志愿"
+            url: "https://gaokao.chsi.com.cn/zyck/"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+          - name: "框框大学"
+            url: "https://www.kkdaxue.com/"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+          - name: "大学生活质量指北"
+            url: "https://colleges.chat"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+
