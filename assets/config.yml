@@ -1,137 +1,667 @@
 ---
-# Homepage configuration
-# See https://fontawesome.com/search for icons options
+# 主页配置
+# 查看 https://fontawesome.com/search 获取图标选项
 
-title: "诗往哥导航"
-subtitle: "shiwange"
-logo: "logo.png"
-# icon: "fas fa-skull-crossbones" # Optional icon
+title: "诗往哥导航"                    # 主标题
+subtitle: "Learning & Education"    # 副标题
+logo: "logo.png"                    # 徽标路径
+# icon: "fas fa-skull-crossbones"   # 可选图标
 
-header: true
-footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">Bulma</a>, <a href="https://vuejs.org/">Vue.js</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+header: true                        # 显示页眉
+footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">Bulma</a>, <a href="https://vuejs.org/">Vue.js</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # 设为 false 可隐藏页脚
 
-# Optional theme customization
-theme: default
+# 可选主题定制
+theme: default                      # 默认主题
 
-columns: "3"
+columns: "3"                        # 三列布局
 
 defaults:
-  layout: list
+  layout: list                      # 默认列表布局
 
-# Optional message
+# 欢迎消息
 message:
-  style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
+  style: "is-dark" # 深色样式（样式选项参考：https://bulma.io/documentation/components/message/#colors）
   title: "👋 欢迎 !"
   content: "当全世界抛弃你时，你身上有上亿个细胞都为你而活。"
 
-# Optional navbar
-# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+# 导航栏链接
+# links: []                        # 创建无链接的导航栏（仅含暗色模式/布局/搜索）
 links:
-  - name: "Contribute!"
+  - name: "网站源码"
     icon: "fab fa-github"
-    url: "https://github.com/bastienwirtz/homer"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Documentation"
-    icon: "fas fa-book"
-    url: "https://github.com/bastienwirtz/homer/blob/main/README.md#table-of-contents"
-  # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
-  # see url field and assets/additional-page.yml.dist used in this example:
-  - name: "another page!"
-    icon: "fas fa-file-alt"
-    url: "#additional-page" 
+    url: "https://github.com/lss53/NavGuide"
+    target: "_blank"               # 在新标签页打开
+  # 这将链接到第二个 homer 页面，该页面将从 additional-page.yml 加载配置，并保留 config.yml 文件中的默认配置值
+  # 查看 url 字段和此示例中使用的 assets/additional-page.yml.dist：
+  - name: "工作与职业"
+    icon: "fa-regular fa-id-card"
+    url: "#work-career"
 
-# Services
-# First level array represent a group.
-# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+  - name: "AI与智能工具"
+    icon: "fa-solid fa-robot"
+    url: "#ai-smart-tools"
+
+  - name: "软件开发与资源"
+    icon: "fa-brands fa-microsoft"
+    url: "#dev-resources"
+
+  - name: "实用工具与生活"
+    icon: "fas fa-toolbox"
+    url: "#practical-tools-life"
+
+# 服务
+# 第一层数组代表一个组。
+# 如果不使用分组（组名、图标和标签样式是可选的，分组分隔线将不会显示），则只保留一个 "items" 键。
 services:
-  - name: "基础教育"
+  - name: "基础教育资源"
     icon: "fa-solid fa-bookmark"
     class: ""
     items:
       - name: "义务教育课程标准"
         icon: "fa-solid fa-book"
-        url: ""
-        quick:
-          - name: "人民教育出版社"
-            url: "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
-          - name: "教育部"
-            url: "https://www.gov.cn/zhengce/zhengceku/2022-04/21/content_5686535.htm"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
+        subtitle: "人民教育出版社，2022年版"
+        tag: "课标"
+        keywords: "义务教育课程标准 人民教育出版社 课标 2022年版" #可选关键词用于搜索目的
+        url: "https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/"
+        target: "_blank"
+
+      - name: "义务教育课程标准"
+        icon: "fa-solid fa-book"
+        subtitle: "教育部，2022年版"
+        tag: "课标"
+        url: "https://www.gov.cn/zhengce/zhengceku/2022-04/21/content_5686535.htm"
+        target: "_blank"
+
+      - name: "普通高中课程标准"
+        icon: "fa-solid fa-book"
+        subtitle: "人民教育出版社，2017年版2020年修订"
+        tag: "课标"
+        url: "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020/"
+        target: "_blank"
         
       - name: "普通高中课程标准"
         icon: "fa-solid fa-book"
-        url: ""
-        quick:
-          - name: "人民教育出版社"
-            url: "https://www.pep.com.cn/xw/zt/rjwy/yjkb2022/"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
-          - name: "教育部"
-            url: "http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
+        subtitle: "教育部，2017年版2020年修订"
+        tag: "课标"
+        url: "http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html"
+        target: "_blank"
+
       - name: "电子教材"
         icon: "fa-solid fa-book"
-        url: ""
-        quick:
-          - name: "人民教育出版社"
-            url: "https://jc.pep.com.cn/"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
-          - name: "智慧中小学（多版本）"
-            url: "https://basic.smartedu.cn/tchMaterial"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
+        subtitle: "人民教育出版社"
+        tag: "教材"
+        url: "https://jc.pep.com.cn/"
+        target: "_blank"
+        
+      - name: "电子教材"
+        icon: "fa-solid fa-book"
+        subtitle: "中小学各版本"
+        tag: "教材"
+        url: "https://jc.pep.com.cn/"
+        target: "_blank"
+
       - name: "题库资源"
         icon: "fa-solid fa-file-word"
-        url: ""
-        quick:
-          - name: "组卷网（学科网）"
-            url: "https://zujuan.xkw.com/"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
-          - name: "九科星（金太阳）"
-            url: "https://www.jkxjxw.com/"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
+        subtitle: "组卷网（学科网）"
+        tag: "题库"
+        url: "https://zujuan.xkw.com/"
+        target: "_blank"
+        
+      - name: "题库资源"
+        icon: "fa-solid fa-file-word"
+        subtitle: "九科星（金太阳）"
+        tag: "题库"
+        url: "https://www.jkxjxw.com/"
+        target: "_blank"
 
-  - name: "学科学习"
+  - name: "K-12学科辅导 (B站UP主)"
     icon: "fa-solid fa-video"
     class: "highlight-purple"
     items: 
-      - name: "语文"
+      - name: "学过石油的语文老师"
         icon: "fa-brands fa-bilibili"
-        subtitle: "免费系统课"
-        tag: "高中"
-        url: ""
-        quick:
-          - name: "奇哥"
-            url: "https://space.bilibili.com/39737405"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
+        subtitle: "免费的神！讲课超有感染力！"
+        tag: "高中语文"
+        url: "https://space.bilibili.com/39737405"
+        target: "_blank"
+
+      - name: "中文系五匪子"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "【骚话公式】让你作文越写越骚，越写越好!"
+        tag: "高中语文"
+        url: "https://space.bilibili.com/7920565"
+        target: "_blank"
+
+      - name: "教语文的小苏老师"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "讲解社科词汇、时事热点等，适合积累写作素材"
+        tag: "高中语文"
+        url: "https://space.bilibili.com/3546730119301591"
+        target: "_blank"
+
+      - name: "一数"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "想夯实基础的首选"
+        tag: "高中数学"
+        url: "https://space.bilibili.com/14229967"
+        target: "_blank"
+
+      - name: "凉学长喜欢讲数学"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "知识体系较强，上限较高"
+        tag: "高中数学"
+        url: "https://space.bilibili.com/438836652"
+        target: "_blank"
+
+      - name: "橘子zhen好吃"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "攻破解析几何、导数、概率等压轴"
+        tag: "高中数学"
+        url: "https://space.bilibili.com/1956704656"
+        target: "_blank"
+
+      - name: "马老师的观点"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "qq群拥有网络上能找到的几乎所有卷子"
+        tag: "高中数学"
+        url: "https://space.bilibili.com/88820221"
+        target: "_blank"
+
+      - name: "ToMath小火车"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "刷完模拟题后再听，会收获不同的方法和解题思路"
+        tag: "高中数学"
+        url: "https://space.bilibili.com/2918884"
+        target: "_blank"
+
+      - name: "Heshawn高中数学何帅"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "获取高考信息差，只看视频即可"
+        tag: "高中数学"
+        url: "https://space.bilibili.com/68554357"
+        target: "_blank"
+
+      - name: "FREE高考英语"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "陶然，零基础教学，无脑冲"
+        tag: "高中英语"
+        url: "https://space.bilibili.com/2742391"
+        target: "_blank"
+
+      - name: "一英儿"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "系统语法 + 读后续写 + 词根短文拓词库"
+        tag: "高中英语"
+        url: "https://space.bilibili.com/632207543"
+        target: "_blank"
+
+      - name: "英语的平行世界"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "英语底层语法"
+        tag: "高中英语"
+        url: "https://space.bilibili.com/388576777"
+        target: "_blank"
+
+      - name: "HuangFuRen"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "黄夫人，基础薄弱首选！"
+        tag: "高中物理"
+        url: "https://space.bilibili.com/632207543"
+        target: "_blank"
+
+      - name: "一物儿"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "系统框架梳理、重难点专题突破"
+        tag: "高中物理"
+        url: "https://space.bilibili.com/3546695694551936"
+        target: "_blank"
+        
+      - name: "北大学长跳跳"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "模块化系统课全覆盖"
+        tag: "高中物理"
+        url: "https://space.bilibili.com/439177375"
+        target: "_blank"
+
+      - name: "化学老师李政"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "公认的真神！"
+        tag: "高中化学"
+        url: "https://space.bilibili.com/476738879"
+        target: "_blank"
+
+      - name: "一化儿"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "从基础到拔高，适合构建知识体系"
+        tag: "高中化学"
+        url: "https://space.bilibili.com/1526560679"
+        target: "_blank"
+
+      - name: "陆艳华老师"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "适合同步和一轮复习！"
+        tag: "高中化学"
+        url: "https://space.bilibili.com/513813254"
+        target: "_blank"
+
+      - name: "汉水丑生侯伟"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "零基础首选！"
+        tag: "高中生物"
+        url: "https://space.bilibili.com/519546088"
+        target: "_blank"
+
+      - name: "一生儿"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "深入浅出，通俗易懂！"
+        tag: "高中生物"
+        url: "https://space.bilibili.com/476738879"
+        target: "_blank"
+
+      - name: "李林生物"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "基础知识 + 解题技巧"
+        tag: "高中生物"
+        url: "https://space.bilibili.com/229823308"
+        target: "_blank"
 
   - name: "高等教育与升学"
     icon: "fa-solid fa-graduation-cap"
     class: "highlight-inverted"
     items:
-      - name: "志愿参考"
+      - name: "阳光志愿"
         icon: "fa-solid fa-link"
-        tag: ""
-        url: ""
+        subtitle: "教育部学生服务与素质发展中心"
+        tag: "志愿填报"
+        url: "https://gaokao.chsi.com.cn/zyck/"
+        target: "_blank"
+
+      - name: "框框大学"
+        icon: "fa-solid fa-link"
+        subtitle: "高中生填志愿及大学生职业规划参考"
+        tag: "志愿填报"
+        url: "https://www.kkdaxue.com/"
+        target: "_blank"
+
+      - name: "大学生活质量指北"
+        icon: "fa-solid fa-link"
+        subtitle: "实实在在影响大学生活质量的详尽信息"
+        tag: "志愿填报"
+        url: "https://colleges.chat"
+        target: "_blank"
+
+      - name: "宋浩老师官方"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "线性代数讲得贼明白！"
+        tag: "大学数学"
+        url: "https://space.bilibili.com/66607740"
+        target: "_blank"
+
+      - name: "李天意Providence"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "快速学完高等数学"
+        tag: "大学数学"
+        url: "https://space.bilibili.com/36979113"
+        target: "_blank"
+
+      - name: "3Blue1Brown"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "理解线性代数的本质"
+        tag: "大学数学"
+        url: "https://space.bilibili.com/88461692"
+        target: "_blank"
+
+      - name: "物理系的允文君"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "大学物理课程讲解"
+        tag: "大学物理"
+        url: "https://space.bilibili.com/52663683"
+        target: "_blank"
+
+      - name: "_碳十二_"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "专业课程资源共建文档"
+        tag: "大学"
+        url: "https://www.bilibili.com/video/BV1Mi4y1o7CE/"
+        target: "_blank"
         quick:
-          - name: "阳光志愿"
-            url: "https://gaokao.chsi.com.cn/zyck/"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
-          - name: "框框大学"
-            url: "https://www.kkdaxue.com/"
-            icon: "fa-solid fa-arrow-up-right-from-square"
-            target: "_blank"
-          - name: "大学生活质量指北"
-            url: "https://colleges.chat"
+          - name: "登录查看/腾讯文档"
+            url: "https://docs.qq.com/sheet/DRU5MWHZCTHFGQnhM"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
 
+      - name: "考研斯基"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "考研经验教训"
+        tag: "考研"
+        url: "https://space.bilibili.com/431748468"
+        target: "_blank"
+
+      - name: "鸟山学长"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "23考研月份规划"
+        tag: "考研"
+        url: "https://www.bilibili.com/video/BV1Mu41167Yg"
+        target: "_blank"
+
+      - name: "空卡空卡空空卡"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "考研政治速成课"
+        tag: "考研"
+        url: "https://space.bilibili.com/16671656"
+        target: "_blank"
+
+      - name: "学长小谭"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "考研政治经验分享"
+        tag: "考研"
+        url: "https://space.bilibili.com/401800534"
+        target: "_blank"
+
+      - name: "小思想家ya"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "考研英语干货"
+        tag: "考研"
+        url: "https://space.bilibili.com/246448702"
+        target: "_blank"
+
+      - name: "没咋了"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "考研数学经验"
+        tag: "考研"
+        url: "https://space.bilibili.com/452790824"
+        target: "_blank"
+
+      - name: "取景框看世界"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "论文资源查找"
+        tag: "科研"
+        url: "https://www.bilibili.com/video/BV1D54y1W73h"
+        target: "_blank"
+
+      - name: "毕导THU"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "科研生涯科普"
+        tag: "科研"
+        url: "https://www.bilibili.com/video/BV1wC4y1x7c8"
+        target: "_blank"
+
+      - name: "钱婧老师"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "研究生文献阅读要求"
+        tag: "科研"
+        url: "https://www.bilibili.com/video/BV1Tq4y1a7wi"
+        target: "_blank"
+
+      - name: "免疫学尹芝南"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "文献阅读技巧"
+        tag: "科研"
+        url: "https://www.bilibili.com/video/BV1kR4y177tj"
+        target: "_blank"
+
+      - name: "龙王山小青椒"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "论文范文解析"
+        tag: "科研"
+        url: "https://www.bilibili.com/video/BV1No4y1y7ep"
+        target: "_blank"
+
+  - name: "语言与资格考试"
+    icon: "fa-solid fa-id-card"
+    class: ""
+    items:
+      - name: "我是瑞斯拜"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "四六级词汇课&作文模板"
+        tag: "英语四六级"
+        url: "https://space.bilibili.com/11021614"
+        target: "_blank"
+
+      - name: "喘喘winnie"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "四六级备考攻略"
+        tag: "英语四六级"
+        url: "https://space.bilibili.com/513866289"
+        target: "_blank"
+
+      - name: "一白学长"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "四六级听力训练"
+        tag: "英语四六级"
+        url: "https://www.bilibili.com/video/BV1ET4y1o7kx"
+        target: "_blank"
+
+      - name: "硫磺蛋"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "雅思考试技巧"
+        tag: "雅思"
+        url: "https://www.bilibili.com/video/BV1yb411m7xp"
+        target: "_blank"
+
+      - name: "Charlie有好好学习"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "雅思阅读方法全解"
+        tag: "雅思"
+        url: "https://space.bilibili.com/473413114"
+        target: "_blank"
+
+      - name: "丸子Tina"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "雅思口语备考"
+        tag: "雅思"
+        url: "https://www.bilibili.com/video/BV175411f7QY"
+        target: "_blank"
+
+      - name: "爱吃年糕的阿泽"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "高效学习雅思攻略"
+        tag: "雅思"
+        url: "https://www.bilibili.com/video/BV1N7411G7WE"
+        target: "_blank"
+
+      - name: "Vince9120"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "7节课突破30分托福写作"
+        tag: "托福"
+        url: "https://www.bilibili.com/video/BV1UJ411T7oN"
+        target: "_blank"
+
+      - name: "辛西娅酱X"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "满分口语干货"
+        tag: "托福"
+        url: "https://www.bilibili.com/video/BV1i3411h7y3"
+        target: "_blank"
+
+      - name: "熙熙熙熙熙-"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "托福自学备考经验"
+        tag: "托福"
+        url: "https://www.bilibili.com/video/BV1jY411s7gv"
+        target: "_blank"
+
+      - name: "CocoPolaris"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "教师资格证笔试网课"
+        tag: "教师资格证"
+        url: "https://www.bilibili.com/video/BV1Ga4y1i77D"
+        target: "_blank"
+
+      - name: "迟早会发光的镜子"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "教师资格证备考经验"
+        tag: "教师资格证"
+        url: "https://www.bilibili.com/video/BV1iL4y1e7VX"
+        target: "_blank"
+
+      - name: "公考杨济瑞"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "公考知识扫盲"
+        tag: "公考课程"
+        url: "https://www.bilibili.com/video/BV1rf4y1z7uN"
+        target: "_blank"
+
+      - name: "刘文超Vin"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "行测系统课"
+        tag: "公考课程"
+        url: "https://www.bilibili.com/video/BV12t4115735"
+        target: "_blank"
+
+      - name: "公考贺冲"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "申论系统课"
+        tag: "公考课程"
+        url: "https://www.bilibili.com/video/BV17o4y1C7zj"
+        target: "_blank"
+
+      - name: "公考章晓铭"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "公考面试攻略"
+        tag: "公考课程"
+        url: "https://www.bilibili.com/video/BV1kJ411s71p"
+        target: "_blank"
+
+  - name: "学习方法与策略"
+    icon: "fa-regular fa-hourglass-half"
+    class: ""
+    items:
+      - name: "YJango"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "教育部学习方法合作项目断墨寻径"
+        tag: "学习方法"
+        url: "https://www.bilibili.com/video/BV1LU4y1g7no"
+        target: "_blank"
+
+      - name: "蜡笔和小勋"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "提升记忆效率"
+        tag: "学习方法"
+        url: "https://www.bilibili.com/video/BV14b411h7FM"
+        target: "_blank"
+
+      - name: "二二酸酸"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "进入学习状态"
+        tag: "学习方法"
+        url: "https://www.bilibili.com/video/BV1QX4y157mJ"
+        target: "_blank"
+
+      - name: "杨真直"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "提高学习动力"
+        tag: "学习方法"
+        url: "https://www.bilibili.com/video/BV1Ya4y1W7iT"
+        target: "_blank"
+
+      - name: "树林同学-"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "高中学习系统合集"
+        tag: "学习方法"
+        url: "https://www.bilibili.com/video/BV1X3411k7CX"
+        target: "_blank"
+
+      - name: "可妈可吗"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "高中考高分攻略"
+        tag: "学习方法"
+        url: "https://www.bilibili.com/video/BV1p741127kM"
+        target: "_blank"
+
+  - name: "在线教育平台"
+    icon: "fa-solid fa-chalkboard-user"
+    items:
+      - name: "国家中小学智慧教育平台"
+        icon: "fa-solid fa-coins"
+        subtitle: "国家中小学教师研修资源平台"
+        tag: "继续教育"
+        url: "https://basic.smartedu.cn/teacherTrainingNav"
+        target: "_blank"
+
+      - name: "山东省教师教育网"
+        icon: "fa-solid fa-coins"
+        subtitle: "山东省教师继续教育学习平台"
+        tag: "继续教育"
+        url: "https://www.qlteacher.com/"
+        target: "_blank"
+
+      - name: "重庆人社培训网"
+        icon: "fa-solid fa-coins"
+        subtitle: "重庆市专业技术人员公需科目学习平台"
+        tag: "继续教育"
+        url: "https://www.cqrspx.cn/"
+        target: "_blank"
+
+      - name: "重庆市中小学教师培训学分信息管理系统"
+        icon: "fa-solid fa-coins"
+        subtitle: "重庆市教师继续教育学分管理系统"
+        tag: "继续教育"
+        url: "http://teacher.jsfz.cqedu.cn/"
+        target: "_blank"
+
+      - name: "华文慕课"
+        icon: "fa-solid fa-building-columns"
+        subtitle: "面向全球的中文慕课平台"
+        tag: "学习"
+        url: "https://www.chinesemooc.org/"
+        target: "_blank"
+
+      - name: "中国大学MOOC"
+        icon: "fa-solid fa-building-columns"
+        subtitle: "国内顶尖高校在线课程平台"
+        tag: "学习"
+        url: "https://www.icourse163.org/"
+        target: "_blank"
+
+      - name: "学堂在线"
+        icon: "fa-solid fa-building-columns"
+        subtitle: "清华大学发起的慕课平台"
+        tag: "学习"
+        url: "https://next.xuetangx.com/"
+        target: "_blank"
+
+      - name: "智慧树网"
+        icon: "fa-solid fa-building-columns"
+        subtitle: "高校在线教育平台，含LaTeX排版课程"
+        tag: "学习"
+        url: "https://www.zhihuishu.com/"
+        target: "_blank"
+
+  - name: "编程学习"
+    icon: "fa-solid fa-chalkboard-user"
+    items:
+      - name: "Python-100-Days"
+        icon: "fa-solid fa-square-binary"
+        subtitle: "Python入门到精通的100天学习计划"
+        tag: "编程"
+        url: "https://github.com/jackfrued/Python-100-Days"
+        target: "_blank"
+
+      - name: "C语言入门课"
+        icon: "fa-solid fa-square-binary"
+        subtitle: "阮一峰老师的C语言入门教程"
+        tag: "编程"
+        url: "https://wangdoc.com/clang/"
+        target: "_blank"
+
+      - name: "程序设计入门—C语言"
+        icon: "fa-solid fa-square-binary"
+        subtitle: "浙江大学翁恺教授的C语言课程"
+        tag: "编程"
+        url: "https://www.icourse163.org/course/ZJU-199001"
+        target: "_blank"
+
+      - name: "C语言程序设计进阶"
+        icon: "fa-solid fa-square-binary"
+        subtitle: "浙江大学翁恺教授的C语言进阶课程"
+        tag: "编程"
+        url: "https://www.icourse163.org/course/ZJU-200001"
+        target: "_blank"
+
+      - name: "Build Your Own Lisp 中文版"
+        icon: "fa-solid fa-square-binary"
+        subtitle: "学习C语言写Lisp"
+        tag: "编程"
+        url: "https://www.abnerchou.me/BuildYourOwnLispCn/"
+        target: "_blank"

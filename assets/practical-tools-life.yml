@@ -1,0 +1,391 @@
+---
+subtitle: "Practical Tools & Life"  # 副标题
+
+message: ~
+
+links:
+  - name: "Home"
+    icon: "fas fa-home"
+    url: "#"
+
+  - name: "工作与职业"
+    icon: "fa-regular fa-id-card"
+    url: "#work-career"
+
+  - name: "AI与智能工具"
+    icon: "fa-solid fa-robot"
+    url: "#ai-smart-tools"
+
+  - name: "软件开发与资源"
+    icon: "fa-brands fa-microsoft"
+    url: "#dev-resources"
+
+  - name: "实用工具与生活"
+    icon: "fas fa-toolbox"
+    url: "#practical-tools-life"
+
+services:
+  - name: "效率工具"
+    icon: "fa-solid fa-hourglass-start"
+    items:
+      - name: "DeepL翻译"
+        icon: "fa-solid fa-language"
+        subtitle: "精准的AI翻译工具，支持多种语言"
+        tag: "翻译"
+        url: "https://www.deepl.com"
+        target: "_blank"
+
+      - name: "有道翻译"
+        icon: "fa-solid fa-language"
+        subtitle: "网易有道推出的翻译服务"
+        tag: "翻译"
+        url: "https://fanyi.youdao.com/#/TextTranslate"
+        target: "_blank"
+
+      - name: "爱词霸"
+        icon: "fa-solid fa-language"
+        subtitle: "金山词霸旗下的翻译工具"
+        tag: "翻译"
+        url: "https://www.iciba.com/translate"
+        target: "_blank"
+
+      - name: "TinyPNG"
+        icon: "fa-solid fa-file-image"
+        subtitle: "智能无损图片压缩（中文版）"
+        tag: "设计/排版"
+        url: "https://tinify.cn"
+        target: "_blank"
+        quick:
+          - name: "英文版"
+            url: "https://tinify.com/"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+
+      - name: "UXWing"
+        icon: "fa-solid fa-icons"
+        subtitle: "免费SVG和PNG图标库"
+        tag: "设计/排版"
+        url: "https://uxwing.com"
+        target: "_blank"
+
+      - name: "Font Awesome"
+        icon: "fa-solid fa-font-awesome"
+        subtitle: "免费图标库，网页设计必备"
+        tag: "设计/排版"
+        url: "https://fontawesome.com/search?ic=free&o=r"
+        target: "_blank"
+
+      - name: "RealFaviconGenerator"
+        icon: "fa-solid fa-r"
+        subtitle: "网站图标生成工具"
+        tag: "设计/排版"
+        url: "https://realfavicongenerator.net"
+        target: "_blank"
+
+      - name: "Markdown Nice"
+        icon: "fa-brands fa-markdown"
+        subtitle: "Markdown文档排版美化工具"
+        tag: "设计/排版"
+        url: "https://editor.mdnice.com"
+        target: "_blank"
+
+      - name: "正则表达式测试"
+        icon: "fa-solid fa-r"
+        subtitle: "正则表达式在线测试和调试工具"
+        tag: "开发辅助"
+        url: "https://regex101.com/"
+        target: "_blank"
+
+      - name: "在线屏幕检测"
+        icon: "fa-solid fa-display"
+        subtitle: "显示器检测和校准工具"
+        tag: "硬件检测"
+        url: "https://screen.bmcx.com/#welcome"
+        target: "_blank"
+
+      - name: "屏幕刷新率检测"
+        icon: "fa-solid fa-display"
+        subtitle: "显示器刷新率测试工具"
+        tag: "硬件检测"
+        url: "https://testufo.com"
+        target: "_blank"
+
+  - name: "移动应用"
+    icon: "fa-solid fa-mobile"
+    items:
+      - name: "4PDA论坛"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "俄罗斯知名移动设备论坛"
+        tag: "论坛"
+        url: "https://4pda.to/forum"
+        target: "_blank"
+
+      - name: "FM影视TV"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "手机、电视端影视应用"
+        tag: "影音"
+        url: "https://github.com/FongMi/Release/raw/fongmi/apk/release"
+        target: "_blank"
+
+      - name: "OK影视TV"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "手机、电视端影视应用"
+        tag: "影音"
+        url: "https://github.com/FongMi/Release/blob/main/apk/release"
+        target: "_blank"
+
+      - name: "TVBox_q215613905"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "手机、电视端影视应用，Credit: q215613905"
+        tag: "影音"
+        url: "https://github.com/o0HalfLife0o/TVBoxOSC/releases"
+        target: "_blank"
+
+      - name: "TVBox_takagen99"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "手机、电视端影视应用，Credit: takagen99"
+        tag: "影音"
+        url: "https://github.com/o0HalfLife0o/TVBoxOSC/releases"
+        target: "_blank"
+
+      - name: "EasyBox"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "基于TVBox二次开发的影视应用"
+        tag: "影音"
+        url: "https://www.easybox.pro"
+        target: "_blank"
+
+      - name: "影视仓"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "基于TVBox二次开发的影视应用"
+        tag: "影音"
+        url: "https://drive.uc.cn/s/b437317346a14"
+        target: "_blank"
+
+      - name: "uz影视"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "视频源扩展应用，分享码6666/1111/2222"
+        tag: "影音"
+        url: "https://github.com/YYDS678/uzVideo"
+        target: "_blank"
+
+      - name: "TVBox接口"
+        icon: "fa-brands fa-github-alt"
+        subtitle: "TVBox接口资源合集"
+        tag: "影音"
+        url: "https://github.com/dlgt7/TVbox-interface/blob/main/github.md"
+        target: "_blank"
+
+      - name: "海阔视界"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "功能强大的影视规则应用"
+        tag: "影音"
+        url: "http://blog.haikuoshijie.com/archives/fang-yuan-ying-shi-chang-jian-wen-ti"
+        target: "_blank"
+
+      - name: "洛雪音乐"
+        icon: "fa-solid fa-mobile-screen"
+        subtitle: "开源音乐播放器，支持多平台"
+        tag: "影音"
+        url: "https://lxmusic.cc"
+        target: "_blank"
+
+      - name: "Via浏览器收藏合集"
+        icon: "fa-regular fa-file-lines"
+        subtitle: "Via浏览器配置和收藏合集"
+        tag: "浏览器"
+        url: "https://gitee.com/daybreak166/ViaBrowserCollection/blob/master/README.md"
+        target: "_blank"
+
+  - name: "生活服务"
+    icon: "fa-solid fa-circle-info"
+    items:
+      - name: "多多进宝"
+        icon: "fa-solid fa-cart-shopping"
+        subtitle: "拼多多推广平台"
+        tag: "购物推广"
+        url: "https://jinbao.pinduoduo.com"
+        target: "_blank"
+
+      - name: "淘宝联盟"
+        icon: "fa-solid fa-cart-shopping"
+        subtitle: "淘宝客推广平台，获取商品佣金"
+        tag: "购物推广"
+        url: "https://pub.alimama.com"
+        target: "_blank"
+
+      - name: "京东联盟"
+        icon: "fa-solid fa-cart-shopping"
+        subtitle: "京东推广联盟，赚取推广收益"
+        tag: "购物推广"
+        url: "https://union.jd.com"
+        target: "_blank"
+
+      - name: "苏宁易购联盟"
+        icon: "fa-solid fa-cart-shopping"
+        subtitle: "苏宁易购推广平台"
+        tag: "购物推广"
+        url: "http://sums.suning.com"
+        target: "_blank"
+
+      - name: "唯品会联盟"
+        icon: "fa-solid fa-cart-shopping"
+        subtitle: "唯品会推广平台"
+        tag: "购物推广"
+        url: "https://union.meituan.com"
+        target: "_blank"
+
+      - name: "美团千载"
+        icon: "fa-solid fa-cart-shopping"
+        subtitle: "美团推广平台"
+        tag: "购物推广"
+        url: "https://union.meituan.com"
+        target: "_blank"
+
+      - name: "巨量百应Buyin"
+        icon: "fa-solid fa-cart-shopping"
+        subtitle: "抖音电商推广平台"
+        tag: "购物推广"
+        url: "https://buyin.jinritemai.com/mpa/account/login?log_out=1"
+        target: "_blank"
+
+      - name: "热点时刻"
+        icon: "fa-solid fa-info"
+        subtitle: "每小时更新的中国社交网络热点汇总"
+        tag: "信息热点"
+        url: "https://hourly.top"
+        target: "_blank"
+
+      - name: "HelloGitHub"
+        icon: "fa-solid fa-info"
+        subtitle: "GitHub热门项目推荐，每日发现新工具"
+        tag: "信息热点"
+        url: "https://hellogithub.com"
+        target: "_blank"
+
+      - name: "默沙东诊疗手册"
+        icon: "fa-solid fa-house-chimney-medical"
+        subtitle: "权威医学知识库，涵盖各类疾病信息"
+        tag: "医疗健康"
+        url: "https://www.msdmanuals.cn"
+        target: "_blank"
+
+
+  - name: "图书与文献"
+    icon: "fa-solid fa-sitemap"
+    items:
+      - name: "Anna's Archive"
+        icon: "fa-solid fa-book-atlas"
+        subtitle: "影子图书馆，海量电子书资源"
+        tag: "图书与文献"
+        url: "https://annas-archive.org/"
+        target: "_blank"
+
+      - name: "Z-Library"
+        icon: "fa-solid fa-book-atlas"
+        subtitle: "知名电子书资源库（维基百科上有最新网址）"
+        tag: "图书与文献"
+        url: "https://zh.wikipedia.org/wiki/Z-Library"
+        target: "_blank"
+
+      - name: "电脑书籍@国宝2023"
+        icon: "fa-solid fa-square-binary"
+        subtitle: "阿里云盘分享的计算机书籍资源"
+        tag: "图书"
+        url: "https://www.aliyundrive.com/s/UAhNX5frTEL#r48g"
+        target: "_blank"
+
+  - name: "科普知识 (B站)"
+    icon: "fa-solid fa-brain"
+    items:
+      - name: "柴知道"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "风趣幽默的知识科普频道"
+        tag: "科普"
+        url: "https://space.bilibili.com/26798384"
+        target: "_blank"
+
+      - name: "天冬Asp"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "植物与自然科普内容"
+        tag: "科普"
+        url: "https://space.bilibili.com/338235854"
+        target: "_blank"
+
+      - name: "无穷小亮的科普日常"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "科普工作者日常生活中的有趣内容"
+        tag: "科普"
+        url: "https://space.bilibili.com/14804670"
+        target: "_blank"
+
+      - name: "毛茸茸的星球"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "动物世界科普频道"
+        tag: "科普"
+        url: "https://space.bilibili.com/431753564"
+        target: "_blank"
+
+      - name: "二次元的中科院物理所"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "中科院物理所的趣味科普频道"
+        tag: "科普"
+        url: "https://space.bilibili.com/407045223"
+        target: "_blank"
+
+      - name: "萌萌战队"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "航空航天业内人士的科普频道"
+        tag: "科普"
+        url: "https://space.bilibili.com/357669580"
+        target: "_blank"
+
+  - name: "视频教程"
+    icon: "fa-solid fa-chalkboard"
+    items:
+      - name: "菜鸟主老王"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "EduEditer 视频教程"
+        tag: "软件使用"
+        url: "https://space.bilibili.com/26798384"
+        target: "_blank"
+
+      - name: "Oeasy教程系列"
+        icon: "fa-solid fa-video"
+        subtitle: "涵盖多种软件技能的免费视频教程"
+        tag: "软件使用"
+        url: "http://oeasy.org"
+        target: "_blank"
+
+      - name: "doyoudo"
+        icon: "fa-solid fa-video"
+        subtitle: "PS、剪辑等设计软件视频教程"
+        tag: "软件使用"
+        url: "https://www.doyoudo.com"
+        target: "_blank"
+
+      - name: "Python入门@鱼C-小甲鱼"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "B站Python入门视频教程"
+        tag: "编程"
+        url: "https://www.bilibili.com/video/BV1c4411e77t"
+        target: "_blank"
+
+      - name: "Python精通@黑马程序员"
+        icon: "fa-brands fa-bilibili"
+        subtitle: "B站Python进阶视频教程"
+        tag: "编程"
+        url: "https://www.bilibili.com/video/av14184325"
+        target: "_blank"
+
+
+
+
+
+
+
+
+
+
+
+
