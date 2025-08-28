@@ -12,7 +12,7 @@ message: ~
 # 由于需要在此处加入不同链接（以便返回主页），必须复制所有链接，否则覆盖链接字段时原有链接将被移除：
 
 links:
-  - name: "Home"
+  - name: "主页"
     icon: "fas fa-home"
     url: "#"
 
