@@ -15,16 +15,15 @@ services:
   - name: "数字图书馆 | Digital Library"
     icon: "fa-solid fa-book-open-reader"
     items:
+      # 电子书资源
       - name: "Anna's Archive"
         icon: "fa-solid fa-archive"
         subtitle: "影子图书馆，海量电子书资源"
-        tag: ""
         url: "https://annas-archive.org/"
         target: "_blank"
       - name: "Z-Library"
         icon: "fa-solid fa-book"
         subtitle: "知名电子书资源库（维基百科上有最新网址）"
-        tag: ""
         url: "https://zh.wikipedia.org/wiki/Z-Library"
         target: "_blank"
       - name: "国宝2023"
@@ -52,9 +51,10 @@ services:
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
 
-  - name: "软件资源 | Software Resources"
+  - name: "系统与办公软件 | System & Office Software"
     icon: "fa-solid fa-download"
     items:
+      # 系统和办公软件
       - name: "UUP dump"
         icon: "fa-brands fa-windows"
         subtitle: "轻松地从 Windows 更新服务器下载 UUP 文件"
@@ -97,6 +97,11 @@ services:
         tag: "Download office"
         url: "http://shui2012.ysepan.com"
         target: "_blank"
+
+  - name: "软件激活 | Software Activation"
+    icon: "fa-solid fa-key"
+    items:
+      # 软件激活相关
       - name: "零散坑"
         icon: "fa-solid fa-key"
         subtitle: "KMS激活Windows和Office口袋指南"
@@ -109,7 +114,7 @@ services:
         target: "_blank"
       - name: "Ohook"
         icon: "fa-regular fa-face-smile"
-        subtitle: "通用 Office “激活”钩子, 主要侧重于启用订阅版本的完整功能"
+        subtitle: "通用 Office '激活'钩子, 主要侧重于启用订阅版本的完整功能"
         url: "https://github.com/asdcorp/ohook"
         target: "_blank"
       - name: "MSFreeSoft"
@@ -139,6 +144,11 @@ services:
         subtitle: "Windows系统优化小工具集合"
         url: "https://www.sordum.org/"
         target: "_blank"
+
+  - name: "软件资源站 | Software Resources"
+    icon: "fa-solid fa-box-open"
+    items:
+      # 软件资源网站
       - name: "Downloadly"
         icon: "fa-solid fa-download"
         subtitle: "伊朗软件下载站"
@@ -244,20 +254,11 @@ services:
         subtitle: "JetBrains开发工具激活资源"
         url: "https://3.jetbra.in"
         target: "_blank"
-      - name: "百度网盘免费小量解析站"
-        icon: "fa-solid fa-cloud-download-alt"
-        subtitle: "百度网盘免费小量解析站汇总，持续收集更新"
-        url: "https://www.8uid.com/forum-post/8010.html"
-        target: "_blank"
-      - name: "Via浏览器收藏合集"
-        icon: "fa-solid fa-compass"
-        subtitle: "Via浏览器配置和收藏合集"
-        url: "https://gitee.com/daybreak166/ViaBrowserCollection/blob/master/README.md"
-        target: "_blank"
 
   - name: "移动应用 | Mobile Apps"
     icon: "fa-solid fa-mobile-alt"
     items:
+      # 移动应用
       - name: "4PDA论坛"
         icon: "fa-solid fa-mobile"
         subtitle: "俄罗斯知名移动设备论坛"
@@ -316,10 +317,21 @@ services:
         tag: "Mobile APP"
         url: "https://lxmusic.cc"
         target: "_blank"
+      - name: "百度网盘免费小量解析站"
+        icon: "fa-solid fa-cloud-download-alt"
+        subtitle: "百度网盘免费小量解析站汇总，持续收集更新"
+        url: "https://www.8uid.com/forum-post/8010.html"
+        target: "_blank"
+      - name: "Via浏览器收藏合集"
+        icon: "fa-solid fa-compass"
+        subtitle: "Via浏览器配置和收藏合集"
+        url: "https://gitee.com/daybreak166/ViaBrowserCollection/blob/master/README.md"
+        target: "_blank"
 
-  - name: "生活服务 | Life Services"
+  - name: "生活与电商服务 | Life & E-commerce Services"
     icon: "fa-solid fa-house-chimney"
     items:
+      # 生活服务
       - name: "HelloGitHub"
         icon: "fa-solid fa-h"
         subtitle: "GitHub热门项目推荐，每日发现新工具"

@@ -20,9 +20,10 @@ links:
     url: "#"
 
 services:
-  - name: "升学与规划 | University Application"
+  - name: "大学升学规划 | University Planning"
     icon: "fa-solid fa-bullseye"
     items:
+      # 升学规划相关
       - name: "阳光志愿"
         icon: "fa-solid fa-sun"
         subtitle: "教育部学生服务与素质发展中心"
@@ -41,9 +42,10 @@ services:
         url: "https://colleges.chat"
         target: "_blank"
 
-  - name: "考研备战 | Postgraduate Exam"
+  - name: "考研备考资源 | Postgraduate Exam"
     icon: "fa-solid fa-graduation-cap"
     items:
+      # 考研相关
       - name: "考研斯基"
         icon: "fab fa-bilibili"
         subtitle: "考研经验教训"
@@ -75,9 +77,10 @@ services:
         url: "https://space.bilibili.com/452790824"
         target: "_blank"
 
-  - name: "大学课程 | University Courses"
+  - name: "大学课程学习 | University Courses"
     icon: "fa-solid fa-chalkboard-user"
     items:
+      # 大学课程
       - name: "宋浩老师官方"
         icon: "fab fa-bilibili"
         subtitle: "线性代数讲得贼明白！"
@@ -113,9 +116,10 @@ services:
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
 
-  - name: "科研技能 | Research Skills"
+  - name: "学术科研技能 | Academic Research"
     icon: "fa-solid fa-flask"
     items:
+      # 科研技能
       - name: "取景框看世界"
         icon: "fab fa-bilibili"
         subtitle: "论文资源查找"
