@@ -8,7 +8,7 @@ logo: "logo.png"                    # 徽标路径
 # icon: "fas fa-skull-crossbones"   # 可选图标
 
 header: true                        # 显示页眉
-footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">Bulma</a>, <a href="https://vuejs.org/">Vue.js</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # 设为 false 可隐藏页脚
+footer: '<p><p>使用 <a href="https://bulma.io/">Bulma</a>, <a href="https://vuejs.org/">Vue.js</a> 和 <a href="https://fontawesome.com/">Font Awesome</a> <span class="has-text-danger">❤️</span> 制作 // 在 <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a> 复刻本项目 </p>' # 设为 false 可隐藏页脚
 
 # 可选主题定制
 theme: default                      # 默认主题
