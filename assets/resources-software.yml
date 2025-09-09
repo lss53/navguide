@@ -232,7 +232,7 @@ services:
       - name: "IDM"
         icon: "fa-solid fa-download"
         subtitle: "IDM Crack By Ali.Dbg"
-        tag: "Patch"
+        # tag: "Patch"
         url: "https://idm.ckk.ir"
         target: "_blank"
         quick:
