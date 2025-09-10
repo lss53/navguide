@@ -66,6 +66,11 @@ services:
             url: "https://space.bilibili.com/583659758"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
+      - name: "免费资源库"
+        icon: "fa-solid fa-folder-open"
+        subtitle: "全学段全科目教学资源等，微信公众号：教师茶馆"
+        url: "https://vlink.cc/jscg"
+        target: "_blank"
 
   - name: "系统与办公软件 | System & Office Software"
     icon: "fa-solid fa-download"
@@ -128,6 +133,11 @@ services:
         subtitle: "Windows和Office激活脚本"
         url: "https://massgrave.dev"
         target: "_blank"
+        quick:
+          - name: "汉化"
+            url: "https://bbs.kafan.cn/thread-2273368-1-1.html"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
       - name: "Ohook"
         icon: "fa-regular fa-face-smile"
         subtitle: "通用 Office '激活'钩子, 主要侧重于启用订阅版本的完整功能"
