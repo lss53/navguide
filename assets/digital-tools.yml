@@ -194,6 +194,11 @@ services:
         subtitle: "学习C语言写Lisp"
         url: "https://www.abnerchou.me/BuildYourOwnLispCn/"
         target: "_blank"
+      - name: "Rust 学习笔记"
+        icon: "fa-brands fa-rust"
+        subtitle: "主要是笔记文章"
+        url: "https://zjp-cn.github.io/rust-note/"
+        target: "_blank"
 
   - name: "实用工具集 | Utility Tools"
     icon: "fa-solid fa-toolbox"
