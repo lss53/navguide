@@ -45,6 +45,8 @@ services:
       - name: "国宝FTP"
         icon: "fa-solid fa-folder-tree"
         subtitle: "影视和电脑书籍等"
+        type: "CopyToClipboard"
+        clipboard: "用户名和密码对应烈火群名称和群号码"
         quick:
           - name: "电脑书籍"
             url: "https://www.aliyundrive.com/s/UAhNX5frTEL#r48g"
@@ -54,8 +56,6 @@ services:
             url: "ftp://110.191.179.209:21"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
-        type: "CopyToClipboard"
-        clipboard: "AppHot群号码"
         
         <i class="fa-solid fa-folder-tree"></i>
       - name: "林颖韬"
