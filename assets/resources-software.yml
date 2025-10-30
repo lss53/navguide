@@ -56,8 +56,6 @@ services:
             url: "ftp://110.191.179.209:21"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
-        
-        <i class="fa-solid fa-folder-tree"></i>
       - name: "林颖韬"
         icon: "fa-solid fa-database"
         subtitle: "福建高中生物 QQ 群资源"
