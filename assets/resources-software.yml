@@ -76,6 +76,11 @@ services:
         subtitle: "全学段全科目教学资源等，微信公众号：教师茶馆"
         url: "https://vlink.cc/jscg"
         target: "_blank"
+      - name: "BT之家1LOU站"
+        icon: "fa-solid fa-archive"
+        subtitle: "永久地址发布页"
+        url: "https://www.1lou.cc"
+        target: "_blank"
 
   - name: "系统与办公软件 | System & Office Software"
     icon: "fa-solid fa-download"
