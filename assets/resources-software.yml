@@ -86,6 +86,11 @@ services:
         subtitle: "1lou.me/1lou.cc/1lou.pro永久地址发布页"
         url: "https://www.1lou.pro"
         target: "_blank"
+      - name: "妙搜云-专业网盘资源搜索分享平台"
+        icon: "fa-solid fa-video"
+        subtitle: "一个找电影/电视剧/动漫的有效途径"
+        url: "https://msmy.cn"
+        target: "_blank"
 
   - name: "系统与办公软件 | System & Office Software"
     icon: "fa-solid fa-download"
