@@ -138,6 +138,12 @@ services:
         tag: "Download office"
         url: "http://shui2012.ysepan.com"
         target: "_blank"
+      - name: "雨糖科技"
+        icon: "fa-solid fa-briefcase"
+        subtitle: "MathType+WPS Office等"
+        tag: "Patch"
+        url: "https://raincandy.tech"
+        target: "_blank"
 
   - name: "软件激活 | Software Activation"
     icon: "fa-solid fa-key"
