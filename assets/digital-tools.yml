@@ -52,7 +52,7 @@ services:
         url: "https://www.deepseek.com/"
         target: "_blank"
       - name: "智谱清言"
-        icon: "fa-solid fa-chart-line"
+        icon: "fa-solid fa-microchip"
         subtitle: "北京智谱华章科技股份有限公司开发、运营的问答对话生成产品"
         url: "https://chatglm.cn"
         target: "_blank"
