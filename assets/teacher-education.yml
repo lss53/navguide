@@ -5,9 +5,9 @@
 subtitle: "Teacher Education"
 
 message:
-  style: "is-primary"
-  title: "🍎 教师加油站"
-  content: "继续教育 · 备课资源 · 课件教案"
+  style: "is-link"
+  title: "🧑🏫 教师加油站"
+  content: "继续教育、备课资源"
 
 links:
   - name: "主页"
