@@ -370,7 +370,7 @@ services:
         # subtitle: "TVBox接口资源合集"
         quick:
           - name: "1"
-            url: "hhttps://github.com/qist/tvbox"
+            url: "https://github.com/qist/tvbox"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
           - name: "2"
