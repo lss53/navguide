@@ -166,7 +166,7 @@ services:
         target: "_blank"
 
   # 2026/08/11 更新
-  - name: "高效学习方法 | Learning Methods"
+  - name: "学习方法与思维 | Learning Methods"
     icon: "fa-solid fa-brain"
     items:
       - name: "YJango"
