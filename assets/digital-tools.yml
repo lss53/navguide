@@ -4,7 +4,7 @@ subtitle: "Digital Tools"
 message:
   style: "is-primary"
   title: "🤖 智能助手"
-  content: "AI工具、开发资源与实用软件"
+  content: "AI工具、开发资源与在线实用软件"
 
 links:
   - name: "主页"
@@ -224,10 +224,10 @@ services:
         url: "https://www.bilibili.com/video/av14184325"
         target: "_blank"
 
-  - name: "实用工具集 | Utility Tools"
+  - name: "在线实用工具 | Online Utilities"
     icon: "fa-solid fa-toolbox"
     items:
-      # 实用工具
+      # 在线实用工具
       - name: "DeepL翻译"
         icon: "fa-solid fa-language"
         subtitle: "精准的AI翻译工具，支持多种语言"
