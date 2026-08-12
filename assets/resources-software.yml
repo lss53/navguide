@@ -43,16 +43,16 @@ services:
         target: "_blank"
       - name: "电脑书籍"
         icon: "fa-solid fa-folder-tree"
-        subtitle: "群又国宝收集"
+        subtitle: "群友国宝收集"
         url: "https://www.aliyundrive.com/s/UAhNX5frTEL#r48g"
         target: "_blank"
 
   - name: "影视与媒体资源 | Media & Video Resources"
     icon: "fa-solid fa-film"
     items:
-      - name: "国宝FTP - 影视"
+      - name: "影视FTP"
         icon: "fa-solid fa-video"
-        subtitle: "国宝FTP影视资源，群号码682895863"
+        subtitle: "群友国宝，群号码682895863"
         url: "ftp://110.191.179.209:21"
         target: "_blank"
         quick:
@@ -452,7 +452,7 @@ services:
         url: "https://space.bilibili.com/357669580"
         target: "_blank"
 
-  - name: "生活与电商服务 | Life & E-commerce Services"
+  - name: "电商服务 | E-commerce Services"
     icon: "fa-solid fa-house-chimney"
     items:
       - name: "多多进宝"
