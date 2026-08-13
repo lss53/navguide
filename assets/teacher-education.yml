@@ -1,6 +1,9 @@
----
-# 教师资源独立页面
-# 聚焦教师继续教育、研修培训与学分管理
+# ============================================================
+# 文件：teacher-education.yml
+# 页面：教师资源（#teacher-education）
+# 定位：教师专业发展 — 继续教育、研修培训、学分管理、备课资源
+# 架构：按教师工作场景分组（继续教育平台 → 教学课件资源）
+# ============================================================
 
 subtitle: "Teacher Education"
 
@@ -9,6 +12,7 @@ message:
   title: "🧑🏫 教师加油站"
   content: "继续教育、备课资源"
 
+# ---------- 顶部导航栏 ----------
 links:
   - name: "主页"
     icon: "fas fa-home"
@@ -25,7 +29,7 @@ links:
   - name: "资源软件"
     icon: "fas fa-download"
     url: "#resources-software"
-  - name: "教师教育"
+  - name: "教师资源"
     icon: "fas fa-chalkboard-user"
     url: "#teacher-education"
   - name: "网站源码"
@@ -33,7 +37,13 @@ links:
     url: "https://github.com/lss53/NavGuide"
     target: "_blank"
 
+# ============================================================
+# 服务分组（教师教育内容）
+# ============================================================
+
 services:
+
+  # -------- 组1：教师继续教育（官方学分平台） --------
   - name: "教师继续教育 | Teacher Continuing Education"
     icon: "fa-solid fa-chalkboard"
     items:
@@ -61,6 +71,8 @@ services:
         tag: "继续教育"
         url: "http://teacher.jsfz.cqedu.cn/"
         target: "_blank"
+
+  # -------- 组2：教学备课资源（课件/教辅/网盘） --------
   - name: "教学资源 | Teaching Resources"
     icon: "fa-solid fa-book-open"
     items:

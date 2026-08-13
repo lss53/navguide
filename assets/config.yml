@@ -1,37 +1,36 @@
----
-# 主页配置
-# 查看 https://fontawesome.com/search 获取图标选项
+# ============================================================
+# 文件：config.yml
+# 页面：主页（#）
+# 定位：K12 基础教育 — 课程标准、电子教材、学科名师
+# 架构：按学科（语/数/英/物/化/生）分组 + 顶部公共资源
+# ============================================================
 
+# ---------- 站点全局配置 ----------
 title: "诗往哥导航"                  # 主标题
 subtitle: "Learning & Education"    # 副标题
 logo: "logo.png"                    # 徽标路径
-# icon: "fas fa-skull-crossbones"   # 可选图标
+# icon: "fas fa-skull-crossbones"   # 可选图标（Font Awesome）
 
 header: true                        # 显示页眉
-footer: '<p><p>使用 <a href="https://bulma.io/">Bulma</a>, <a href="https://vuejs.org/">Vue.js</a> 和 <a href="https://fontawesome.com/">Font Awesome</a> <span class="has-text-danger">❤️</span> 制作 // 在 <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a> 复刻本项目 </p>' # 设为 false 可隐藏页脚
+footer: '<p><p>使用 <a href="https://bulma.io/">Bulma</a>, <a href="https://vuejs.org/">Vue.js</a> 和 <a href="https://fontawesome.com/">Font Awesome</a> <span class="has-text-danger">❤️</span> 制作 // 在 <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a> 复刻本项目 </p>'
 
-# 可选主题定制
+# ---------- 主题与布局 ----------
 theme: default                      # 默认主题
-
-columns: "3"                        # 三列布局
-
+columns: "3"                        # 三列网格布局
 defaults:
-  layout: list                      # 默认列表布局
+  layout: list                      # 默认列表视图
 
-# 欢迎消息
+# ---------- 欢迎消息 ----------
 message:
-  style: "is-dark" # 深色样式（样式选项参考：https://bulma.io/documentation/components/message/#colors）
+  style: "is-dark"                  # Bulma 消息样式  https://bulma.io/documentation/components/message/#colors
   title: "👋 欢迎 !"
   content: "当全世界抛弃你时，你身上有上亿个细胞都为你而活。💡 <a>使用顶部导航栏快速切换分类</a>！"
 
-# 导航栏链接
-# links: []                        # 创建无链接的导航栏（仅含暗色模式/布局/搜索）
+# ---------- 顶部导航栏 ----------
 links:
   - name: "主页"
     icon: "fas fa-home"
     url: "#"
-  # 这将链接到第二个 homer 页面，该页面将从 additional-page.yml 加载配置，并保留 config.yml 文件中的默认配置值
-  # 查看 url 字段和此示例中使用的 assets/additional-page.yml.dist：
   - name: "高等教育"
     icon: "fas fa-graduation-cap"
     url: "#higher-education"
@@ -50,14 +49,14 @@ links:
   - name: "网站源码"
     icon: "fab fa-github"
     url: "https://github.com/lss53/NavGuide"
-    target: "_blank"               # 在新标签页打开
+    target: "_blank"
 
-# 服务
-# 第一层数组代表一个组。
-# 如果不使用分组（组名、图标和标签样式是可选的，分组分隔线将不会显示），则只保留一个 "items" 键。
-# 主页配置保持不变，只调整services部分
+# ============================================================
+# 服务分组（主页内容）
+# ============================================================
 
 services:
+  # -------- 组1：公共资源（课标/教材/题库） --------
   - name: "基础教育资源 | Basic Education Resources"
     icon: "fa-solid fa-school"
     items:
@@ -110,7 +109,7 @@ services:
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
 
-  # 按学科重新分组
+  # -------- 组2：高中语文 --------
   - name: "高中语文 | Chinese"
     icon: "fa-solid fa-book"
     items:
@@ -129,7 +128,8 @@ services:
         subtitle: "讲解社科词汇、时事热点等，适合积累写作素材"
         url: "https://space.bilibili.com/3546730119301591"
         target: "_blank"
-  
+
+  # -------- 组3：高中数学 --------
   - name: "高中数学 | Mathematics"
     icon: "fa-solid fa-calculator"
     items:
@@ -163,7 +163,8 @@ services:
         subtitle: "获取高考信息差，只看视频即可"
         url: "https://space.bilibili.com/68554357"
         target: "_blank"
-  
+
+  # -------- 组4：高中英语 --------
   - name: "高中英语 | English"
     icon: "fa-solid fa-language"
     items:
@@ -182,7 +183,8 @@ services:
         subtitle: "英语底层语法"
         url: "https://space.bilibili.com/388576777"
         target: "_blank"
-  
+
+  # -------- 组5：高中物理 --------
   - name: "高中物理 | Physics"
     icon: "fa-solid fa-atom"
     items:
@@ -201,7 +203,8 @@ services:
         subtitle: "模块化系统课全覆盖"
         url: "https://space.bilibili.com/439177375"
         target: "_blank"
-  
+
+  # -------- 组6：高中化学 --------
   - name: "高中化学 | Chemistry"
     icon: "fa-solid fa-flask"
     items:
@@ -220,7 +223,8 @@ services:
         subtitle: "适合同步和一轮复习！"
         url: "https://space.bilibili.com/513813254"
         target: "_blank"
-  
+
+  # -------- 组7：高中生物 --------
   - name: "高中生物 | Biology"
     icon: "fa-solid fa-dna"
     items:

@@ -1,4 +1,11 @@
----
+# ============================================================
+# 文件：digital-tools.yml
+# 页面：数字工具（#digital-tools）
+# 定位：Web 端在线服务 — "打开即用"，无需下载安装
+# 架构：按工具类型分组（AI工具 → 开发部署 → 编程学习 → 在线实用工具）
+# 修改：无，完全保留原样
+# ============================================================
+
 subtitle: "Digital Tools"
 
 message:
@@ -6,6 +13,7 @@ message:
   title: "🤖 智能助手"
   content: "AI工具、开发资源与在线实用软件"
 
+# ---------- 顶部导航栏 ----------
 links:
   - name: "主页"
     icon: "fas fa-home"
@@ -30,7 +38,13 @@ links:
     url: "https://github.com/lss53/NavGuide"
     target: "_blank"
 
+# ============================================================
+# 服务分组（数字工具内容）
+# ============================================================
+
 services:
+
+  # -------- 组1：AI 大模型（全部为 Web 端聊天/生成工具） --------
   - name: "人工智能工具 | AI Tools"
     icon: "fa-solid fa-robot"
     items:
@@ -105,10 +119,10 @@ services:
         url: "https://github.com/HaujetZhao/CapsWriter-Offline"
         target: "_blank"
 
+  # -------- 组2：开发与部署（代码托管/云部署） --------
   - name: "开发与部署 | Development & Deployment"
     icon: "fa-solid fa-code"
     items:
-      # 代码托管和部署平台
       - name: "GitHub"
         icon: "fa-brands fa-github"
         subtitle: "全球最大代码托管平台，开发者必备"
@@ -158,10 +172,10 @@ services:
         url: "https://www.namesilo.com/"
         subtitle: "国外域名注册商，价格低"
 
+  # -------- 组3：编程开发学习（在线文档/教程） --------
   - name: "编程开发学习 | Developer Learning"
     icon: "fa-solid fa-book"
     items:
-      # 开发学习文档和教程
       - name: "Python 3 文档"
         icon: "fa-brands fa-python"
         subtitle: "Python官方中文文档"
@@ -207,7 +221,6 @@ services:
         subtitle: "主要是笔记文章"
         url: "https://zjp-cn.github.io/rust-note/"
         target: "_blank"
-      # 2026/08/11 更新
       - name: "CodeSheep"
         icon: "fab fa-bilibili"
         subtitle: "编程学习导航"
@@ -224,10 +237,10 @@ services:
         url: "https://www.bilibili.com/video/av14184325"
         target: "_blank"
 
+  # -------- 组4：在线实用工具（翻译/压缩/图标/正则等） --------
   - name: "在线实用工具 | Online Utilities"
     icon: "fa-solid fa-toolbox"
     items:
-      # 在线实用工具
       - name: "DeepL翻译"
         icon: "fa-solid fa-language"
         subtitle: "精准的AI翻译工具，支持多种语言"
@@ -293,7 +306,6 @@ services:
         subtitle: "LaTex 网页公式编辑器"
         url: "https://simpletex.cn/formula_editor"
         target: "_blank"
-      # 以下两条2026/08/12更新
       - name: "HelloGitHub"
         icon: "fa-solid fa-h"
         subtitle: "GitHub热门项目推荐，每日发现新工具"

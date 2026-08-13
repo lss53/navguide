@@ -1,9 +1,18 @@
----
+# ============================================================
+# 文件：resources-software.yml
+# 页面：资源软件（#resources-software）
+# 定位：本地客户端 / 系统镜像 / 激活工具 / 移动应用 — "需要下载安装或部署"
+# 架构：按资源类型分组（电子书 → 影视 → 系统办公 → 激活 → 综合软件 → 生活服务）
+# ============================================================
+
 subtitle: "Resources & Software"
+
 message:
   style: "is-warning"
   title: "🛠️ 资源宝库"
   content: "软件资源、移动应用与生活服务"
+
+# ---------- 顶部导航栏 ----------
 links:
   - name: "主页"
     icon: "fas fa-home"
@@ -27,7 +36,14 @@ links:
     icon: "fab fa-github"
     url: "https://github.com/lss53/NavGuide"
     target: "_blank"
+
+# ============================================================
+# 服务分组（资源软件内容）
+# ============================================================
+
 services:
+
+  # -------- 组1：数字图书馆与电子书 --------
   - name: "数字图书馆与电子书 | Digital Library"
     icon: "fa-solid fa-book-open-reader"
     items:
@@ -47,6 +63,7 @@ services:
         url: "https://www.aliyundrive.com/s/UAhNX5frTEL#r48g"
         target: "_blank"
 
+  # -------- 组2：影视与媒体资源（TVBox/音乐等） --------
   - name: "影视与媒体资源 | Media & Video Resources"
     icon: "fa-solid fa-film"
     items:
@@ -55,7 +72,6 @@ services:
         subtitle: "群友国宝，群号码682895863"
         url: "ftp://110.191.179.209:21"
         target: "_blank"
-        quick:
       - name: "BT之家1LOU站"
         icon: "fa-solid fa-video"
         subtitle: "1lou.me/1lou.cc/1lou.pro/1lou.one永久地址发布页"
@@ -139,6 +155,7 @@ services:
         url: "https://lxmusic.cc"
         target: "_blank"
 
+  # -------- 组3：系统与办公软件（Windows/Office 镜像下载） --------
   - name: "系统与办公软件 | System & Office Software"
     icon: "fa-solid fa-download"
     items:
@@ -191,6 +208,7 @@ services:
         url: "https://raincandy.tech"
         target: "_blank"
 
+  # -------- 组4：软件激活（KMS/密钥/脚本） --------
   - name: "软件激活 | Software Activation"
     icon: "fa-solid fa-key"
     items:
@@ -237,10 +255,11 @@ services:
         url: "https://forums.mydigitallife.net"
         target: "_blank"
 
+  # -------- 组5：综合软件与移动应用（PC/Mobile 下载站） --------
   - name: "综合软件与移动应用 | Software & Mobile Resources"
     icon: "fa-solid fa-box-open"
     items:
-      # PC 端资源
+      # ----- PC 端资源 -----
       - name: "Downloadly"
         icon: "fa-solid fa-download"
         subtitle: "伊朗软件下载站"
@@ -381,7 +400,7 @@ services:
             url: "https://mf.dg22.top/user/parse"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
-      # 移动端资源
+      # ----- 移动端资源 -----
       - name: "4PDA论坛"
         icon: "fa-solid fa-mobile"
         subtitle: "俄罗斯知名移动设备论坛"
@@ -401,58 +420,8 @@ services:
         url: "https://gitee.com/daybreak166/ViaBrowserCollection/blob/master/README.md"
         target: "_blank"
 
-  - name: "视频教程与科普 | Video Tutorials & Science"
-    icon: "fa-solid fa-clapperboard"
-    items:
-      # 视频教程
-      - name: "菜鸟主老王"
-        icon: "fab fa-bilibili"
-        subtitle: "EduEditer 视频教程"
-        url: "https://space.bilibili.com/15929124"
-        target: "_blank"
-      - name: "Oeasy教程系列"
-        icon: "fa-solid fa-graduation-cap"
-        subtitle: "涵盖多种软件技能的免费视频教程"
-        url: "http://oeasy.org"
-        target: "_blank"
-      - name: "doyoudo"
-        icon: "fa-solid fa-pen-fancy"
-        subtitle: "PS、剪辑等设计软件视频教程"
-        url: "https://www.doyoudo.com"
-        target: "_blank"
-      # 科普知识
-      - name: "柴知道"
-        icon: "fab fa-bilibili"
-        subtitle: "风趣幽默的知识科普频道"
-        url: "https://space.bilibili.com/26798384"
-        target: "_blank"
-      - name: "天冬Asp"
-        icon: "fab fa-bilibili"
-        subtitle: "植物与自然科普内容"
-        url: "https://space.bilibili.com/338235854"
-        target: "_blank"
-      - name: "无穷小亮的科普日常"
-        icon: "fab fa-bilibili"
-        subtitle: "科普工作者日常生活中的有趣内容"
-        url: "https://space.bilibili.com/14804670"
-        target: "_blank"
-      - name: "毛茸茸的星球"
-        icon: "fab fa-bilibili"
-        subtitle: "动物世界科普频道"
-        url: "https://space.bilibili.com/431753564"
-        target: "_blank"
-      - name: "二次元的中科院物理所"
-        icon: "fab fa-bilibili"
-        subtitle: "中科院物理所的趣味科普频道"
-        url: "https://space.bilibili.com/407045223"
-        target: "_blank"
-      - name: "萌萌战队"
-        icon: "fab fa-bilibili"
-        subtitle: "航空航天业内人士的科普频道"
-        url: "https://space.bilibili.com/357669580"
-        target: "_blank"
-
-  - name: "电商服务 | E-commerce Services"
+  # -------- 组6：生活服务 --------
+  - name: "生活服务 | Life Services"
     icon: "fa-solid fa-house-chimney"
     items:
       - name: "多多进宝"

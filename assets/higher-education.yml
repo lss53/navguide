@@ -1,19 +1,19 @@
----
-# 额外页面配置
-# 额外配置通过文件名（不含扩展名）作为锚点加载（https://<我的仪表板>#<配置>）
-# config.yml 仍作为基础配置使用，此处的所有值都会覆盖基础配置，因此无需重新定义所有内容
+# ============================================================
+# 文件：higher-education.yml
+# 页面：高等教育（#higher-education）
+# 定位：大学阶段 — 考研、课程学习、学术科研、留学语言、通识科普
+# 架构：按大学场景分组（升学规划 → 考研 → 课程 → 科研 → 方法 → 生活 → 慕课 → 留学语言 → 科普）
+# ============================================================
 
-subtitle: "Higher Education"  # 副标题
+subtitle: "Higher Education"
 
-# 这将覆盖消息配置。设为空值可移除此页面消息，仅保留主页面消息：
-
+# ---------- 欢迎消息 ----------
 message:
   style: "is-info"
   title: "🎓 大学之道"
   content: "大学课程、考研升学与学术研究资源"
 
-# 由于需要在此处加入不同链接（以便返回主页），必须复制所有链接，否则覆盖链接字段时原有链接将被移除：
-
+# ---------- 顶部导航栏（与主页保持一致） ----------
 links:
   - name: "主页"
     icon: "fas fa-home"
@@ -38,11 +38,16 @@ links:
     url: "https://github.com/lss53/NavGuide"
     target: "_blank"
 
+# ============================================================
+# 服务分组（高等教育内容）
+# ============================================================
+
 services:
+
+  # -------- 组1：志愿填报与升学规划 --------
   - name: "大学升学规划 | University Planning"
     icon: "fa-solid fa-bullseye"
     items:
-      # 升学规划相关
       - name: "阳光志愿"
         icon: "fa-solid fa-sun"
         subtitle: "教育部学生服务与素质发展中心"
@@ -61,10 +66,10 @@ services:
         url: "https://colleges.chat"
         target: "_blank"
 
+  # -------- 组2：考研备考 --------
   - name: "考研备考资源 | Postgraduate Exam"
     icon: "fa-solid fa-graduation-cap"
     items:
-      # 考研相关
       - name: "考研斯基"
         icon: "fab fa-bilibili"
         subtitle: "考研经验教训"
@@ -96,10 +101,10 @@ services:
         url: "https://space.bilibili.com/452790824"
         target: "_blank"
 
+  # -------- 组3：大学课程学习（数学/物理等） --------
   - name: "大学课程学习 | University Courses"
     icon: "fa-solid fa-chalkboard-user"
     items:
-      # 大学课程
       - name: "宋浩老师官方"
         icon: "fab fa-bilibili"
         subtitle: "线性代数讲得贼明白！"
@@ -135,10 +140,10 @@ services:
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
 
+  # -------- 组4：学术科研技能 --------
   - name: "学术科研技能 | Academic Research"
     icon: "fa-solid fa-flask"
     items:
-      # 科研技能
       - name: "取景框看世界"
         icon: "fab fa-bilibili"
         subtitle: "论文资源查找"
@@ -165,7 +170,7 @@ services:
         url: "https://www.bilibili.com/video/BV1No4y1y7ep"
         target: "_blank"
 
-  # 2026/08/11 更新
+  # -------- 组5：学习方法 --------
   - name: "学习方法与思维 | Learning Methods"
     icon: "fa-solid fa-brain"
     items:
@@ -200,6 +205,7 @@ services:
         url: "https://www.bilibili.com/video/BV1p741127kM"
         target: "_blank"
 
+  # -------- 组6：大学生活指南 --------
   - name: "大学生活指南 | University Advice"
     icon: "fa-solid fa-lightbulb"
     items:
@@ -229,6 +235,7 @@ services:
         url: "https://www.bilibili.com/video/BV1UA4y1Z7sN"
         target: "_blank"
 
+  # -------- 组7：在线教育平台（慕课） --------
   - name: "在线教育平台 | Online Education"
     icon: "fa-solid fa-laptop"
     items:
@@ -253,4 +260,95 @@ services:
         subtitle: "高校在线教育平台，含LaTeX排版课程"
         tag: "慕课平台"
         url: "https://www.zhihuishu.com/"
+        target: "_blank"
+
+  # -------- 组8：留学与语言考试 --------
+  - name: "留学与语言考试 | Language Tests"
+    icon: "fa-solid fa-language"
+    items:
+      - name: "我是瑞斯拜"
+        icon: "fab fa-bilibili"
+        subtitle: "四六级词汇课&作文模板"
+        url: "https://space.bilibili.com/11021614"
+        target: "_blank"
+      - name: "喘喘winnie"
+        icon: "fab fa-bilibili"
+        subtitle: "四六级备考攻略"
+        url: "https://space.bilibili.com/513866289"
+        target: "_blank"
+      - name: "一白学长"
+        icon: "fab fa-bilibili"
+        subtitle: "四六级听力训练"
+        url: "https://www.bilibili.com/video/BV1ET4y1o7kx"
+        target: "_blank"
+      - name: "硫磺蛋"
+        icon: "fab fa-bilibili"
+        subtitle: "雅思考试技巧"
+        url: "https://www.bilibili.com/video/BV1yb411m7xp"
+        target: "_blank"
+      - name: "Charlie有好好学习"
+        icon: "fab fa-bilibili"
+        subtitle: "雅思阅读方法全解"
+        url: "https://space.bilibili.com/473413114"
+        target: "_blank"
+      - name: "丸子Tina"
+        icon: "fab fa-bilibili"
+        subtitle: "雅思口语备考"
+        url: "https://www.bilibili.com/video/BV175411f7QY"
+        target: "_blank"
+      - name: "爱吃年糕的阿泽"
+        icon: "fab fa-bilibili"
+        subtitle: "高效学习雅思攻略"
+        url: "https://www.bilibili.com/video/BV1N7411G7WE"
+        target: "_blank"
+      - name: "Vince9120"
+        icon: "fab fa-bilibili"
+        subtitle: "7节课突破30分托福写作"
+        url: "https://www.bilibili.com/video/BV1UJ411T7oN"
+        target: "_blank"
+      - name: "辛西娅酱X"
+        icon: "fab fa-bilibili"
+        subtitle: "满分口语干货"
+        tag: "托福"
+        url: "https://www.bilibili.com/video/BV1i3411h7y3"
+        target: "_blank"
+      - name: "熙熙熙熙熙-"
+        icon: "fab fa-bilibili"
+        subtitle: "托福自学备考经验"
+        url: "https://www.bilibili.com/video/BV1jY411s7gv"
+        target: "_blank"
+
+  # -------- 组9：自然科学与通识 --------
+  - name: "自然科学与通识 | Natural Sciences"
+    icon: "fa-solid fa-clapperboard"
+    items:
+      - name: "柴知道"
+        icon: "fab fa-bilibili"
+        subtitle: "风趣幽默的知识科普频道"
+        url: "https://space.bilibili.com/26798384"
+        target: "_blank"
+      - name: "天冬Asp"
+        icon: "fab fa-bilibili"
+        subtitle: "植物与自然科普内容"
+        url: "https://space.bilibili.com/338235854"
+        target: "_blank"
+      - name: "无穷小亮的科普日常"
+        icon: "fab fa-bilibili"
+        subtitle: "科普工作者日常生活中的有趣内容"
+        url: "https://space.bilibili.com/14804670"
+        target: "_blank"
+      - name: "毛茸茸的星球"
+        icon: "fab fa-bilibili"
+        subtitle: "动物世界科普频道"
+        url: "https://space.bilibili.com/431753564"
+        target: "_blank"
+      - name: "二次元的中科院物理所"
+        icon: "fab fa-bilibili"
+        subtitle: "中科院物理所的趣味科普频道"
+        url: "https://space.bilibili.com/407045223"
+        target: "_blank"
+      - name: "萌萌战队"
+        icon: "fab fa-bilibili"
+        subtitle: "航空航天业内人士的科普频道"
+        url: "https://space.bilibili.com/357669580"
         target: "_blank"

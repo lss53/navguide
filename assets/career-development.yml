@@ -1,4 +1,10 @@
----
+# ============================================================
+# 文件：career-development.yml
+# 页面：职业发展（#career-development）
+# 定位：职场人士/求职者 — 职业认证、实用技能、人际交往、职业规划、简历面试
+# 架构：按职场能力模块分组
+# ============================================================
+
 subtitle: "Career Development"
 
 message:
@@ -6,6 +12,7 @@ message:
   title: "💼 职业启航"
   content: "职业技能认证与实用能力提升"
 
+# ---------- 顶部导航栏 ----------
 links:
   - name: "主页"
     icon: "fas fa-home"
@@ -30,62 +37,13 @@ links:
     url: "https://github.com/lss53/NavGuide"
     target: "_blank"
 
-services:
-  - name: "语言认证 | Language Certificates"
-    icon: "fa-solid fa-language"
-    items:
-      - name: "我是瑞斯拜"
-        icon: "fab fa-bilibili"
-        subtitle: "四六级词汇课&作文模板"
-        url: "https://space.bilibili.com/11021614"
-        target: "_blank"
-      - name: "喘喘winnie"
-        icon: "fab fa-bilibili"
-        subtitle: "四六级备考攻略"
-        url: "https://space.bilibili.com/513866289"
-        target: "_blank"
-      - name: "一白学长"
-        icon: "fab fa-bilibili"
-        subtitle: "四六级听力训练"
-        url: "https://www.bilibili.com/video/BV1ET4y1o7kx"
-        target: "_blank"
-      - name: "硫磺蛋"
-        icon: "fab fa-bilibili"
-        subtitle: "雅思考试技巧"
-        url: "https://www.bilibili.com/video/BV1yb411m7xp"
-        target: "_blank"
-      - name: "Charlie有好好学习"
-        icon: "fab fa-bilibili"
-        subtitle: "雅思阅读方法全解"
-        url: "https://space.bilibili.com/473413114"
-        target: "_blank"
-      - name: "丸子Tina"
-        icon: "fab fa-bilibili"
-        subtitle: "雅思口语备考"
-        url: "https://www.bilibili.com/video/BV175411f7QY"
-        target: "_blank"
-      - name: "爱吃年糕的阿泽"
-        icon: "fab fa-bilibili"
-        subtitle: "高效学习雅思攻略"
-        url: "https://www.bilibili.com/video/BV1N7411G7WE"
-        target: "_blank"
-      - name: "Vince9120"
-        icon: "fab fa-bilibili"
-        subtitle: "7节课突破30分托福写作"
-        url: "https://www.bilibili.com/video/BV1UJ411T7oN"
-        target: "_blank"
-      - name: "辛西娅酱X"
-        icon: "fab fa-bilibili"
-        subtitle: "满分口语干货"
-        tag: "托福"
-        url: "https://www.bilibili.com/video/BV1i3411h7y3"
-        target: "_blank"
-      - name: "熙熙熙熙熙-"
-        icon: "fab fa-bilibili"
-        subtitle: "托福自学备考经验"
-        url: "https://www.bilibili.com/video/BV1jY411s7gv"
-        target: "_blank"
+# ============================================================
+# 服务分组（职业发展内容）
+# ============================================================
 
+services:
+
+  # -------- 组1：职业认证（教资/公考） --------
   - name: "职业认证 | Professional Certificates"
     icon: "fa-solid fa-certificate"
     items:
@@ -120,6 +78,7 @@ services:
         url: "https://www.bilibili.com/video/BV1kJ411s71p"
         target: "_blank"
 
+  # -------- 组2：实用技能（PPT/Excel/PS/剪辑等职场硬技能） --------
   - name: "实用技能 | Practical Skills"
     icon: "fa-solid fa-screwdriver-wrench"
     items:
@@ -143,7 +102,23 @@ services:
         subtitle: "Excel技巧教学"
         url: "https://www.bilibili.com/video/BV1uJ411R7ng"
         target: "_blank"
+      - name: "菜鸟主老王"
+        icon: "fab fa-bilibili"
+        subtitle: "EduEditer 视频教程"
+        url: "https://space.bilibili.com/15929124"
+        target: "_blank"
+      - name: "Oeasy教程系列"
+        icon: "fa-solid fa-graduation-cap"
+        subtitle: "涵盖多种软件技能的免费视频教程"
+        url: "http://oeasy.org"
+        target: "_blank"
+      - name: "doyoudo"
+        icon: "fa-solid fa-pen-fancy"
+        subtitle: "PS、剪辑等设计软件视频教程"
+        url: "https://www.doyoudo.com"
+        target: "_blank"
 
+  # -------- 组3：人际交往 --------
   - name: "人际交往 | Interpersonal Skills"
     icon: "fa-solid fa-people-arrows"
     items:
@@ -163,6 +138,7 @@ services:
         url: "https://www.bilibili.com/video/BV1N4411f7Sa"
         target: "_blank"
 
+  # -------- 组4：职业规划 --------
   - name: "职业规划 | Career Planning"
     icon: "fa-solid fa-bullseye"
     items:
@@ -182,6 +158,7 @@ services:
         url: "https://www.bilibili.com/video/BV1xP4y1T7Gc"
         target: "_blank"
 
+  # -------- 组5：简历与面试 --------
   - name: "简历与面试 | Resume & Interview"
     icon: "fa-solid fa-file-lines"
     items:
