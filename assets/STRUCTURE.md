@@ -56,7 +56,7 @@
 | 高中化学 | `fa-solid fa-flask` | B站化学名师（同步/一轮复习） |
 | 高中生物 | `fa-solid fa-dna` | B站生物名师（零基础/技巧） |
 
-**维护提醒**：新增学科资源请放入对应分组；若新增学科，请按现有命名规范（`"高中XX | XXXX"`）创建新组。
+**维护提醒**：新增学科资源请放入对应分组；若新增学科，请按现有命名规范（`"高中XX \| XXXX"`）创建新组。
 
 
 ### 3.2 `higher-education.yml` — 高等教育
@@ -100,10 +100,6 @@
 | 职业规划 | `fa-solid fa-bullseye` | 目标设定、人生规划、职业方向 |
 | 简历与面试 | `fa-solid fa-file-lines` | 简历撰写、自我介绍、面试问答 |
 
-**维护提醒**：
-- “实用技能”组已聚合了**所有软件教学视频**（含从资源软件移入的 Oeasy、doyoudo、菜鸟主老王）。新增软件教程请放此组。
-- **语言考试类资源**（四六级/雅思/托福）请放入高等教育的“留学与语言考试”组，**勿放入此页**。
-
 
 ### 3.4 `digital-tools.yml` — 数字工具
 
@@ -120,11 +116,39 @@
 | 人工智能工具 | `fa-solid fa-robot` | AI 大模型（ChatGPT/DeepSeek/Kimi 等） |
 | 开发与部署 | `fa-solid fa-code` | 代码托管（GitHub/Gitee）、云部署（Vercel/Cloudflare） |
 | 编程开发学习 | `fa-solid fa-book` | 编程文档、在线教程、学习路线 |
-| 在线实用工具 | `fa-solid fa-toolbox` | 翻译、图片压缩、图标库、正则测试等 |
+| 在线实用工具 | `fa-solid fa-toolbox` | 翻译、图片压缩、图标库、正则测试、硬件检测、天气等 |
+
+**站点标签体系（Tag）：**
+
+| Tag | 含义 | 使用场景 |
+|-----|------|---------|
+| `Chat` | AI 对话助手 | ChatGPT / DeepSeek / Kimi 等 |
+| `Code` | AI 编程助手 | Copilot |
+| `Writing` | AI 写作工具 | QuillBot |
+| `Create` | AI 生成工具 | Suno |
+| `TTS` | 语音合成 | GPT-SoVITS |
+| `STT` | 语音识别 | CapsWriter-Offline |
+| `Git` | 代码托管 | GitHub / Gitee / GitLab |
+| `Hosting` | 网站部署 | Vercel / Netlify / Cloudflare Pages |
+| `Domain` | 域名注册 | NameSilo |
+| `Doc` | 开发文档 | Python 文档 / Python Cookbook |
+| `Tutorial` | 编程教程 | C语言入门课 / Rust学习笔记 |
+| `Course` | 系统课程 | 翁恺 C语言 / Python-100-Days |
+| `Project` | 实战项目 | Build Your Own Lisp |
+| `Video` | 视频教程 | CodeSheep / 小甲鱼 / 黑马程序员 |
+| `Translate` | 翻译工具 | DeepL / 有道 / 爱词霸 |
+| `Image` | 图片处理 | TinyPNG |
+| `Icon` | 图标资源 | Font Awesome / UXWing |
+| `Dev` | 开发工具 | Markdown Nice / 正则测试 / SimpleTex |
+| `Hardware` | 硬件检测 | 屏幕检测 / 刷新率检测 |
+| `Weather` | 天气服务 | 中国天气网 |
+| `Resource` | 资源推荐 | HelloGitHub |
+| `Reference` | 知识参考 | 默沙东诊疗手册 |
 
 **维护提醒**：
 - **此页面仅放 Web 端在线服务**，需要下载安装的本地软件请放入 `resources-software.yml`。
 - 区分标准：用户点击链接后是在浏览器中直接使用（Web），还是需要下载文件安装（本地）。
+- 新增在线工具时请参照上表为其分配合理的 `tag`。
 
 
 ### 3.5 `resources-software.yml` — 资源软件
@@ -146,6 +170,47 @@
 | 综合软件与移动应用 | `fa-solid fa-box-open` | PC/Mac 软件下载站、移动端 APP 资源、论坛 |
 | 生活服务 | `fa-solid fa-house-chimney` | 电商推广联盟（淘宝/京东/拼多多等） |
 
+**站点标签体系（Tag）：**
+
+| Tag | 含义 | 使用场景 |
+|-----|------|---------|
+| `E-Book` | 电子书 | Anna's Archive / Z-Library |
+| `FTP` | FTP 服务器 | 影视FTP |
+| `Torrent` | BT/磁力资源 | BT之家 / RuTracker |
+| `Search` | 搜索引擎 | 妙搜云 |
+| `Mobile` | 移动应用 | TVBox系列 / 影视仓 / 海阔视界 |
+| `Music` | 音乐播放器 | 洛雪音乐 |
+| `Source` | 接口/源 | TVBox接口 |
+| `Collection` | 合集 | 裤佬书签收藏 / Via收藏合集 |
+| `Win` | Windows 镜像 | UUP dump / HelloWindows |
+| `ISO` | 系统镜像 | OS.click |
+| `MSDN` | 原版镜像 | MSDN站 |
+| `Office` | Office 相关 | W汉化作品 / Ohook |
+| `Patch` | 补丁/整合包 | 雨糖科技 |
+| `KMS` | KMS 激活 | 零散坑 |
+| `Script` | 激活脚本 | MAS |
+| `Russia` | 俄罗斯站点 | DIAKOV / MSFreeSoft |
+| `Vietnam` | 越南站点 | Taiwebs / VN-Zoom |
+| `Iran` | 伊朗站点 | Downloadly |
+| `Repack` | 重新打包 | LRepacks |
+| `Crack` | 破解资源 | CRACKSurl / CyberMania |
+| `Adobe` | Adobe 资源 | Acrobat资源追踪 |
+| `Scene` | 场景发布站 | SoftArchive |
+| `Green` | 绿色/便携 | 423Down |
+| `Downloader` | 下载工具 | Ghost Downloader-3 / IDM |
+| `Utility` | 系统工具 | Sordum |
+| `Activate` | 激活服务 | JetBra |
+| `Share` | 个人分享 | 闻雷 / 老康软件铺 |
+| `Blog` | 个人博客 | 懒得勤快 / 软件小妹 |
+| `TC` | Total Commander | 广州·狐仙 |
+| `Parser` | 网盘解析 | 百度网盘解析站 |
+| `Forum` | 论坛 | Nsane / 4PDA / Mobilism |
+| `CPS` | 电商推广 | 所有生活服务站点 |
+
+**维护提醒**：
+- **“生活服务”** 组原名为“电商服务”，更名后定位更宽泛。未来可扩展至其他生活类服务链接。
+- **下载工具类**（如 IDM、Ghost Downloader-3）统一放入“综合软件与移动应用”组，使用 `Downloader` 或 `Crack` tag 区分。
+
 
 ### 3.6 `teacher-education.yml` — 教师教育
 
@@ -161,6 +226,9 @@
 |----------|------|----------|
 | 教师继续教育 | `fa-solid fa-chalkboard` | 官方学分平台（国家平台/各省平台） |
 | 教学资源 | `fa-solid fa-book-open` | 备课课件、教辅资料、学科网盘资源 |
+
+**维护提醒**：
+- 课件/教案资源请放入“教学资源”组，**建议注明来源方便追溯**。
 
 
 ## 四、导航栏统一规范
@@ -192,8 +260,8 @@ links:
 ```yaml
 - name: "显示名称"
   icon: "fab fa-bilibili"          # 或 fa-solid fa-xxx
-  subtitle: "简短描述（不超过10字）"
-  tag: "可选标签"                  # 如"大学数学""PC""Mobile"
+  subtitle: "简短描述（不超过15字）"
+  tag: "可选标签"                  # 参考各页面 tag 体系
   url: "https://完整链接"
   target: "_blank"                 # 外部链接必须加
   # quick:                         # 如有快捷入口，可添加
@@ -207,7 +275,6 @@ links:
 
 1. 确认该链接无其他页面引用。
 2. 从对应 YAML 文件中移除条目。
-3. **请勿在 `quick` 中残留失效链接**。
 
 ### 5.3 移动链接到其他页面
 
@@ -234,45 +301,121 @@ links:
 3. 替换 YAML 中对应 `icon` 字段值
 
 
-## 六、常用图标速查
+## 六、站点归属判断速查表
+
+| 判断依据 | 归属页面 | 分组示例 |
+|---------|---------|---------|
+| 高中学科同步学习 | `config.yml` | 高中语文 / 数学 / 英语 ... |
+| 大学课程 / 考研 / 留学 / 学术 | `higher-education.yml` | 大学课程学习 / 考研备考 / 留学与语言考试 |
+| 四六级 / 雅思 / 托福 | `higher-education.yml` | 留学与语言考试 |
+| 自然科普（物理/生物/天文） | `higher-education.yml` | 自然科学与通识 |
+| 教师资格证 / 公务员考试 | `career-development.yml` | 职业认证 |
+| 软件技能教学（PPT/PS/剪辑） | `career-development.yml` | 实用技能 |
+| 简历 / 面试技巧 | `career-development.yml` | 简历与面试 |
+| Web 在线服务（浏览器直接使用） | `digital-tools.yml` | 人工智能工具 / 在线实用工具 |
+| 天气 / 翻译 / 压缩 / 图标 | `digital-tools.yml` | 在线实用工具 |
+| 本地软件下载 / 系统镜像 | `resources-software.yml` | 综合软件与移动应用 / 系统与办公软件 |
+| 软件激活 / 破解 / 密钥 | `resources-software.yml` | 软件激活 / 综合软件与移动应用 |
+| 影视 / TVBox / 音乐客户端 | `resources-software.yml` | 影视与媒体资源 |
+| 教师继续教育学分平台 | `teacher-education.yml` | 教师继续教育 |
+| 备课课件 / 教辅资料 | `teacher-education.yml` | 教学资源 |
+
+
+## 七、常用图标速查
 
 | 场景 | 推荐图标 |
 |------|----------|
+| **品牌图标** ||
 | B站链接 | `fab fa-bilibili` |
-| 外部链接/跳转 | `fa-solid fa-arrow-up-right-from-square` |
+| GitHub 链接 | `fab fa-github` |
+| Python 链接 | `fab fa-python` |
+| C 语言链接 | `fab fa-cuttlefish` |
+| QQ 群/分享 | `fab fa-qq` |
+| Rust 链接 | `fab fa-rust` |
+| Markdown 链接 | `fab fa-markdown` |
+| 微软链接 | `fab fa-microsoft` |
+| **导航与通用** ||
 | 首页 | `fa-solid fa-home` |
+| 外部链接/跳转 | `fa-solid fa-arrow-up-right-from-square` |
 | 教育/学校 | `fa-solid fa-school` / `fa-solid fa-graduation-cap` |
 | 书/阅读 | `fa-solid fa-book` / `fa-solid fa-book-open` |
 | 工具 | `fa-solid fa-tools` / `fa-solid fa-screwdriver-wrench` |
 | 下载 | `fa-solid fa-download` |
+| **AI 与开发** ||
 | AI/机器人 | `fa-solid fa-robot` / `fa-solid fa-brain` |
-| 代码/开发 | `fa-solid fa-code` / `fa-brands fa-github` |
-| 语言 | `fa-solid fa-language` |
+| 代码/开发 | `fa-solid fa-code` |
+| 服务器/部署 | `fa-solid fa-server` / `fa-solid fa-cloud` |
+| 域名 | `fa-solid fa-globe` |
+| **学科** ||
+| 语言/翻译 | `fa-solid fa-language` |
 | 数学 | `fa-solid fa-calculator` |
 | 物理 | `fa-solid fa-atom` |
 | 化学 | `fa-solid fa-flask` |
 | 生物 | `fa-solid fa-dna` |
+| **多媒体** ||
 | 电影/视频 | `fa-solid fa-film` / `fa-solid fa-clapperboard` |
 | 音乐 | `fa-solid fa-music` |
+| 图片处理 | `fa-solid fa-image` |
+| 图标资源 | `fa-solid fa-icons` / `fa-solid fa-font-awesome` |
+| **软件与系统** ||
 | 密钥/激活 | `fa-solid fa-key` / `fa-solid fa-unlock` |
+| 系统窗口 | `fa-solid fa-window-restore` / `fa-brands fa-windows` |
+| 桌面/电脑 | `fa-solid fa-desktop` / `fa-solid fa-laptop` |
+| 移动端 | `fa-solid fa-mobile` |
+| 数据库 | `fa-solid fa-database` |
+| 文件夹/归档 | `fa-solid fa-folder-tree` / `fa-solid fa-archive` |
+| 终端/脚本 | `fa-solid fa-terminal` |
+| 工具箱 | `fa-solid fa-toolbox` / `fa-solid fa-wrench` |
+| **生活与其他** ||
 | 生活/购物 | `fa-solid fa-house-chimney` / `fa-solid fa-shopping-cart` |
+| 天气 | `fa-solid fa-cloud-sun` / `fa-solid fa-cloud` |
+| 医疗/参考 | `fa-solid fa-book-medical` |
+| 公式/上标 | `fa-solid fa-superscript` |
+| 检查清单 | `fa-regular fa-rectangle-list` |
+| 星星/推荐 | `fa-solid fa-star` |
+| 文件/文档 | `fa-solid fa-file-lines` / `fa-solid fa-file-code` |
+| 证书 | `fa-solid fa-certificate` |
+| 脑力/思维 | `fa-solid fa-brain` |
+| 人际 | `fa-solid fa-people-arrows` |
 
 
-## 七、版本历史
+## 八、版本历史
 
 | 日期 | 版本 | 修改内容 |
-|------|------|----------|--------|
-| 2026-08-14 | v2.0 | 架构重构：语言考试移入高等教育；软件教程移入职业发展；科普视频独立更名；电商服务更名生活服务；全文件补充注释 |
+|------|------|----------|
+| 2026-08-14 | v2.2 | 新增 3 个站点：中国天气网（数字工具）、Ghost Downloader-3、Acrobat 资源追踪站（资源软件） |
+| 2026-08-14 | v2.1 | digital-tools.yml 全面审查：8处 icon 优化、48个站点补齐 tag、subtitle 精简 |
+| 2026-08-14 | v2.0 | **全站架构重构**：语言考试移入高等教育；软件教程移入职业发展；科普视频独立更名；电商服务更名生活服务；resources-software.yml 全部 subtitle 秒懂化改造；新增 STRUCTURE.md |
 | 2026-08-13 | v1.0 | 初始版本，六页面架构确立 |
 
 
-## 八、相关资源
+## 九、相关资源
 
 - **Homer 官方文档**：https://github.com/bastienwirtz/homer
 - **Font Awesome 图标库**：https://fontawesome.com/search?ic=free
 - **Bulma CSS 框架**：https://bulma.io/documentation/
 - **本导航源码**：https://github.com/lss53/NavGuide
 
+
+## 十、维护注意事项
+
+1. **缩进规范**：YAML 文件**必须使用 2 个空格缩进**，禁止混用 Tab。
+
+2. **链接完整性**：删除链接前务必确认无其他页面引用；`quick` 中的子链接同样需要维护。
+
+3. **命名一致性**：
+   - 分组名称格式：`"中文名 | English Name"`
+   - 站点名称尽量使用官方名称，避免昵称
+
+4. **分类稳定性**：经过 v2.0 架构重构后，以下分类边界已固定，**请勿随意调整**：
+   - 语言考试（四六级/雅思/托福）→ 高等教育
+   - 软件教学视频 → 职业发展“实用技能”
+   - 纯自然科学科普 → 高等教育“自然科学与通识”
+   - Web 在线服务 → 数字工具
+   - 本地客户端软件 → 资源软件
+
+5. **提交规范**：修改完成后使用约定式提交（Conventional Commits）格式，如 `feat: 新增xxx站点` 或 `refactor: 调整xxx分类`。
+
 ---
 
-> **最后提醒**：在修改任何 YAML 文件前，请先用 `yamllint` 或编辑器插件检查语法格式（缩进、引号、冒号）。YAML 对缩进敏感，**请使用 2 个空格缩进**，不要混用 Tab。
+> **最后提醒**：在修改任何 YAML 文件前，请先用 `yamllint` 或编辑器插件检查语法格式。修改后通过 `git diff --stat` 确认变更范围无误后再提交。

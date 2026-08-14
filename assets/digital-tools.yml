@@ -419,6 +419,13 @@ services:
         target: "_blank"
 
       # ---------- 其他 ----------
+      - name: "中国天气网"
+        icon: "fa-solid fa-cloud-sun"
+        subtitle: "中国气象局官方天气预报与灾害预警平台"
+        tag: "Weather"
+        url: "https://www.weather.com.cn"
+        target: "_blank"
+
       - name: "HelloGitHub"
         icon: "fa-solid fa-star"
         subtitle: "GitHub 热门项目每日推荐"
