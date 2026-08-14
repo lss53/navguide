@@ -1,3 +1,4 @@
+---
 # ============================================================
 # 文件：config.yml
 # 页面：主页（#）
@@ -19,8 +20,9 @@ theme: default                      # 默认主题
 columns: "3"                        # 三列网格布局
 defaults:
   layout: list                      # 默认列表视图
-stylesheet:
+stylesheet:                         # 加载 custom.css
   - "assets/custom.css"
+
 # ---------- 欢迎消息 ----------
 message:
   style: "is-dark"                  # Bulma 消息样式  https://bulma.io/documentation/components/message/#colors
@@ -57,13 +59,17 @@ links:
 # ============================================================
 
 services:
+
   # -------- 组1：公共资源（课标/教材/题库） --------
+  # 定位：教育主管部门发布的官方标准、教材与题库工具
   - name: "基础教育资源 | Basic Education Resources"
     icon: "fa-solid fa-school"
     items:
+
       - name: "义务教育课程标准"
         icon: "fa-solid fa-file-lines"
-        subtitle: "2022年版"
+        subtitle: "2022 年版义务教育课标全文"
+        tag: "Standard"
         quick:
           - name: "人教社"
             url: "https://www.pep.com.cn/xw/zt/rjwy/yjkb2022"
@@ -73,9 +79,11 @@ services:
             url: "https://www.gov.cn/zhengce/zhengceku/2022-04/21/content_5686535.htm"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
+
       - name: "普通高中课程标准"
         icon: "fa-solid fa-file-lines"
-        subtitle: "2017年版2020年修订"
+        subtitle: "2017 年版 2020 年修订版课标"
+        tag: "Standard"
         quick:
           - name: "人教社"
             url: "https://www.pep.com.cn/xw/zt/rjwy/gzkb2020"
@@ -85,9 +93,11 @@ services:
             url: "http://www.moe.gov.cn/srcsite/A26/s8001/202006/t20200603_462199.html"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
+
       - name: "电子教材平台"
         icon: "fa-solid fa-book-open"
-        subtitle: "总是最新版"
+        subtitle: "人教社 / 智慧教育平台电子教材"
+        tag: "Textbook"
         quick:
           - name: "人教社"
             url: "https://jc.pep.com.cn"
@@ -97,9 +107,11 @@ services:
             url: "https://basic.smartedu.cn/tchMaterial"
             icon: "fa-solid fa-arrow-up-right-from-square"
             target: "_blank"
+
       - name: "题库与组卷资源"
         icon: "fa-solid fa-database"
-        subtitle: "学科网&金太阳"
+        subtitle: "组卷网 / 金太阳"
+        tag: "Quiz"
         quick:
           - name: "组卷网"
             url: "https://zujuan.xkw.com"
@@ -111,136 +123,178 @@ services:
             target: "_blank"
 
   # -------- 组2：高中语文 --------
+  # B站语文名师：作文写作、阅读理解、素材积累
   - name: "高中语文 | Chinese"
     icon: "fa-solid fa-book"
     items:
       - name: "学过石油的语文老师"
         icon: "fab fa-bilibili"
-        subtitle: "免费的神！讲课超有感染力！"
+        subtitle: "高考语文系统课，免费且高能"
+        tag: "Course"
         url: "https://space.bilibili.com/39737405"
         target: "_blank"
+
       - name: "中文系五匪子"
         icon: "fab fa-bilibili"
-        subtitle: "【骚话公式】让你作文越写越骚，越写越好!"
+        subtitle: "作文「骚话公式」与高分技巧"
+        tag: "Writing"
         url: "https://space.bilibili.com/7920565"
         target: "_blank"
+
       - name: "教语文的小苏老师"
         icon: "fab fa-bilibili"
-        subtitle: "讲解社科词汇、时事热点等，适合积累写作素材"
+        subtitle: "社科词汇与时事热点写作素材"
+        tag: "Writing"
         url: "https://space.bilibili.com/3546730119301591"
         target: "_blank"
 
   # -------- 组3：高中数学 --------
+  # B站数学名师：同步夯实、压轴突破、真题解析
   - name: "高中数学 | Mathematics"
     icon: "fa-solid fa-calculator"
     items:
       - name: "一数"
         icon: "fab fa-bilibili"
-        subtitle: "想夯实基础的首选"
+        subtitle: "基础知识夯实首选"
+        tag: "Course"
         url: "https://space.bilibili.com/14229967"
         target: "_blank"
+
       - name: "凉学长喜欢讲数学"
         icon: "fab fa-bilibili"
-        subtitle: "知识体系较强，上限较高"
+        subtitle: "完整知识体系，上限较高"
+        tag: "Course"
         url: "https://space.bilibili.com/438836652"
         target: "_blank"
+
       - name: "橘子zhen好吃"
         icon: "fab fa-bilibili"
-        subtitle: "攻破解析几何、导数、概率等压轴"
+        subtitle: "解析几何 / 导数 / 概率等压轴题"
+        tag: "Problem"
         url: "https://space.bilibili.com/1956704656"
         target: "_blank"
+
       - name: "马老师的观点"
         icon: "fab fa-bilibili"
-        subtitle: "qq群拥有网络上能找到的几乎所有卷子"
+        subtitle: "全网模拟卷资源qq群分享"
+        tag: "Resource"
         url: "https://space.bilibili.com/88820221"
         target: "_blank"
+
       - name: "ToMath小火车"
         icon: "fab fa-bilibili"
-        subtitle: "刷完模拟题后再听，会收获不同的方法和解题思路"
+        subtitle: "刷题后听，收获不同解题思路"
+        tag: "Problem"
         url: "https://space.bilibili.com/2918884"
         target: "_blank"
+
       - name: "Heshawn高中数学何帅"
         icon: "fab fa-bilibili"
-        subtitle: "获取高考信息差，只看视频即可"
+        subtitle: "高考信息差与备考策略"
+        tag: "Strategy"
         url: "https://space.bilibili.com/68554357"
         target: "_blank"
 
   # -------- 组4：高中英语 --------
+  # B站英语名师：语法、词汇、读后续写
   - name: "高中英语 | English"
     icon: "fa-solid fa-language"
     items:
       - name: "FREE高考英语"
         icon: "fab fa-bilibili"
-        subtitle: "陶然，零基础教学，无脑冲"
+        subtitle: "陶然老师，零基础友好"
+        tag: "Course"
         url: "https://space.bilibili.com/2742391"
         target: "_blank"
+
       - name: "一英儿"
         icon: "fab fa-bilibili"
-        subtitle: "系统语法 + 读后续写 + 词根短文拓词库"
+        subtitle: "系统语法 / 读后续写 / 词根拓词"
+        tag: "Course"
         url: "https://space.bilibili.com/632207543"
         target: "_blank"
+
       - name: "英语的平行世界"
         icon: "fab fa-bilibili"
-        subtitle: "英语底层语法"
+        subtitle: "英语底层逻辑与语法本质"
+        tag: "Grammar"
         url: "https://space.bilibili.com/388576777"
         target: "_blank"
 
   # -------- 组5：高中物理 --------
+  # B站物理名师：基础巩固、专题突破、系统框架
   - name: "高中物理 | Physics"
     icon: "fa-solid fa-atom"
     items:
       - name: "HuangFuRen"
         icon: "fab fa-bilibili"
-        subtitle: "黄夫人，基础薄弱首选！"
+        subtitle: "黄夫人，基础薄弱学生首选"
+        tag: "Course"
         url: "https://space.bilibili.com/23630128"
         target: "_blank"
+
       - name: "一物儿"
         icon: "fab fa-bilibili"
-        subtitle: "系统框架梳理、重难点专题突破"
+        subtitle: "系统框架梳理与重难点专题"
+        tag: "Course"
         url: "https://space.bilibili.com/3546695694551936"
         target: "_blank"
+
       - name: "北大学长跳跳"
         icon: "fab fa-bilibili"
         subtitle: "模块化系统课全覆盖"
+        tag: "Course"
         url: "https://space.bilibili.com/439177375"
         target: "_blank"
 
   # -------- 组6：高中化学 --------
+  # B站化学名师：同步复习、一轮二轮、拔高突破
   - name: "高中化学 | Chemistry"
     icon: "fa-solid fa-flask"
     items:
       - name: "化学老师李政"
         icon: "fab fa-bilibili"
-        subtitle: "公认的真神！"
+        subtitle: "公认的化学网课天花板"
+        tag: "Course"
         url: "https://space.bilibili.com/476738879"
         target: "_blank"
+
       - name: "一化儿"
         icon: "fab fa-bilibili"
-        subtitle: "从基础到拔高，适合构建知识体系"
+        subtitle: "基础到拔高，构建知识体系"
+        tag: "Course"
         url: "https://space.bilibili.com/1526560679"
         target: "_blank"
+
       - name: "陆艳华老师"
         icon: "fab fa-bilibili"
-        subtitle: "适合同步和一轮复习！"
+        subtitle: "同步课程与一轮复习利器"
+        tag: "Course"
         url: "https://space.bilibili.com/513813254"
         target: "_blank"
 
   # -------- 组7：高中生物 --------
+  # B站生物名师：零基础入门、深入浅出、解题技巧
   - name: "高中生物 | Biology"
     icon: "fa-solid fa-dna"
     items:
       - name: "汉水丑生侯伟"
         icon: "fab fa-bilibili"
-        subtitle: "零基础首选！"
+        subtitle: "零基础入门首选"
+        tag: "Course"
         url: "https://space.bilibili.com/519546088"
         target: "_blank"
+
       - name: "一生儿"
         icon: "fab fa-bilibili"
-        subtitle: "深入浅出，通俗易懂！"
+        subtitle: "深入浅出，通俗易懂"
+        tag: "Course"
         url: "https://space.bilibili.com/2036187097"
         target: "_blank"
+
       - name: "李林生物"
         icon: "fab fa-bilibili"
-        subtitle: "基础知识 + 解题技巧"
+        subtitle: "基础知识 + 解题技巧全覆盖"
+        tag: "Course"
         url: "https://space.bilibili.com/229823308"
         target: "_blank"

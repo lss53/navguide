@@ -1,3 +1,4 @@
+---
 # ============================================================
 # 文件：resources-software.yml
 # 页面：资源软件（#resources-software）
@@ -240,7 +241,7 @@ services:
       - name: "Microsoft Activation Scripts"
         icon: "fa-solid fa-terminal"
         subtitle: "Windows / Office 开源激活脚本（MAS）"
-        # tag: "Script"
+        tag: "Script"
         url: "https://massgrave.dev"
         target: "_blank"
         quick:
@@ -335,7 +336,7 @@ services:
       - name: "Acrobat 资源追踪"
         icon: "fa-solid fa-network-wired"
         subtitle: "m0nkrus 维护的 Adobe 资源站（需科学上网）"
-        # tag: "Adobe"
+        tag: "Adobe"
         quick:
           - name: "VK"
             url: "https://vk.ru/monkrus"
@@ -360,7 +361,7 @@ services:
       - name: "423Down"
         icon: "fa-solid fa-download"
         subtitle: "绿色 / 去广告 / 便携版软件分享站"
-        # tag: "Green"
+        tag: "Green"
         url: "https://www.423down.com"
         target: "_blank"
         quick:
@@ -383,7 +384,7 @@ services:
       - name: "IDM 破解"
         icon: "fa-solid fa-download"
         subtitle: "IDM 补丁（Ali.Dbg）"
-        # tag: "Crack"
+        tag: "Crack"
         url: "https://idm.ckk.ir"
         target: "_blank"
         quick:
@@ -434,7 +435,7 @@ services:
       - name: "QQ 软件"
         icon: "fa-brands fa-qq"
         subtitle: "Dreamcast & apphot 网盘资源合集"
-        # tag: "Share"
+        tag: "Share"
         quick:
           - name: "Dreamcast"
             url: "https://www.lanzoux.com/u/Dreamcast"
@@ -447,7 +448,7 @@ services:
       - name: "百度网盘解析站"
         icon: "fa-solid fa-cloud-download-alt"
         subtitle: "百度网盘免登录解析下载合集"
-        # tag: "Parser"
+        tag: "Parser"
         quick:
           - name: "鸡"
             url: "https://www.8uid.com/forum-post/8010.html"

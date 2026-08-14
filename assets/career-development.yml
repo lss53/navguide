@@ -1,8 +1,9 @@
+---
 # ============================================================
 # 文件：career-development.yml
 # 页面：职业发展（#career-development）
 # 定位：职场人士/求职者 — 职业认证、实用技能、人际交往、职业规划、简历面试
-# 架构：按职场能力模块分组
+# 架构：按职场能力模块分组（认证 → 技能 → 人际 → 规划 → 简历面试）
 # ============================================================
 
 subtitle: "Career Development"
@@ -44,151 +45,208 @@ links:
 services:
 
   # -------- 组1：职业认证（教资/公考） --------
+  # 定位：教师资格证、公务员考试笔试与面试
   - name: "职业认证 | Professional Certificates"
     icon: "fa-solid fa-certificate"
     items:
+
+      # ---------- 教师资格证 ----------
       - name: "CocoPolaris"
         icon: "fab fa-bilibili"
-        subtitle: "教师资格证笔试网课"
+        subtitle: "教师资格证笔试系统网课"
+        tag: "Certification"
         url: "https://www.bilibili.com/video/BV1Ga4y1i77D"
         target: "_blank"
+
       - name: "镜子还是镜子"
         icon: "fab fa-bilibili"
-        subtitle: "教师资格证备考经验"
+        subtitle: "教师资格证备考规划与经验"
+        tag: "Certification"
         url: "https://www.bilibili.com/video/BV1iL4y1e7VX"
         target: "_blank"
+
+      # ---------- 公务员考试 ----------
       - name: "公考杨济瑞"
         icon: "fab fa-bilibili"
-        subtitle: "公考知识扫盲"
+        subtitle: "公考常识扫盲与备考入门"
+        tag: "CivilService"
         url: "https://www.bilibili.com/video/BV1rf4y1z7uN"
         target: "_blank"
+
       - name: "刘文超Vin"
         icon: "fab fa-bilibili"
-        subtitle: "行测系统课"
+        subtitle: "行测全题型系统精讲课"
+        tag: "CivilService"
         url: "https://www.bilibili.com/video/BV12t4115735"
         target: "_blank"
+
       - name: "公考贺冲"
         icon: "fab fa-bilibili"
-        subtitle: "申论系统课"
+        subtitle: "申论写作系统课程"
+        tag: "CivilService"
         url: "https://www.bilibili.com/video/BV17o4y1C7zj"
         target: "_blank"
+
       - name: "公考章晓铭"
         icon: "fab fa-bilibili"
-        subtitle: "公考面试攻略"
+        subtitle: "公考面试题型与应答技巧"
+        tag: "CivilService"
         url: "https://www.bilibili.com/video/BV1kJ411s71p"
         target: "_blank"
 
-  # -------- 组2：实用技能（PPT/Excel/PS/剪辑等职场硬技能） --------
+  # -------- 组2：实用技能（职场硬技能） --------
+  # 定位：PPT/Excel/PS/剪辑/EduEditer 等职场必备软件技能
   - name: "实用技能 | Practical Skills"
     icon: "fa-solid fa-screwdriver-wrench"
     items:
+
       - name: "取景框看世界"
         icon: "fab fa-bilibili"
-        subtitle: "大学技能学习大全"
+        subtitle: "大学生实用技能学习大全"
+        tag: "Skill"
         url: "https://www.bilibili.com/video/BV16M4y1K7Eq"
         target: "_blank"
+
       - name: "Genj是真想教会你"
         icon: "fab fa-bilibili"
-        subtitle: "学生党应该学会的硬技能"
+        subtitle: "学生党必备职场硬技能"
+        tag: "Skill"
         url: "https://www.bilibili.com/video/BV15B4y167Ds"
         target: "_blank"
+
       - name: "旁门左道PPT"
         icon: "fab fa-bilibili"
-        subtitle: "PPT技巧教学"
+        subtitle: "PPT 设计与制作技巧教学"
+        tag: "Office"
         url: "https://www.bilibili.com/video/BV1ES4y1T7S6"
         target: "_blank"
+
       - name: "Excel自学成才"
         icon: "fab fa-bilibili"
-        subtitle: "Excel技巧教学"
+        subtitle: "Excel 函数与数据分析技巧"
+        tag: "Office"
         url: "https://www.bilibili.com/video/BV1uJ411R7ng"
         target: "_blank"
+
       - name: "菜鸟主老王"
         icon: "fab fa-bilibili"
-        subtitle: "EduEditer 视频教程"
+        subtitle: "EduEditer 视频教程与技巧"
+        tag: "Design"
         url: "https://space.bilibili.com/15929124"
         target: "_blank"
+
       - name: "Oeasy教程系列"
         icon: "fa-solid fa-graduation-cap"
-        subtitle: "涵盖多种软件技能的免费视频教程"
+        subtitle: "PS / 剪辑 / 编程等多软件教程"
+        tag: "Design"
         url: "http://oeasy.org"
         target: "_blank"
+
       - name: "doyoudo"
         icon: "fa-solid fa-pen-fancy"
-        subtitle: "PS、剪辑等设计软件视频教程"
+        subtitle: "PS / 剪辑 / 设计软件实战教程"
+        tag: "Design"
         url: "https://www.doyoudo.com"
         target: "_blank"
 
   # -------- 组3：人际交往 --------
+  # 定位：沟通技巧、关系处理、社会适应
   - name: "人际交往 | Interpersonal Skills"
     icon: "fa-solid fa-people-arrows"
     items:
+
       - name: "二二酸酸"
         icon: "fab fa-bilibili"
-        subtitle: "快速有效安慰朋友"
+        subtitle: "快速有效安慰朋友的技巧"
+        tag: "Interpersonal"
         url: "https://www.bilibili.com/video/BV1M64y147Ud"
         target: "_blank"
+
       - name: "_碳十二_"
         icon: "fab fa-bilibili"
-        subtitle: "小心大学垃圾人"
+        subtitle: "识别与应对校园/职场负面人群"
+        tag: "Interpersonal"
         url: "https://www.bilibili.com/video/BV1yA411A783"
         target: "_blank"
+
       - name: "是你们的康康"
         icon: "fab fa-bilibili"
-        subtitle: "处理寝室关系"
+        subtitle: "宿舍与人际关系处理指南"
+        tag: "Interpersonal"
         url: "https://www.bilibili.com/video/BV1N4411f7Sa"
         target: "_blank"
 
   # -------- 组4：职业规划 --------
+  # 定位：目标设定、人生规划、职业方向探索
   - name: "职业规划 | Career Planning"
     icon: "fa-solid fa-bullseye"
     items:
+
       - name: "取景框看世界"
         icon: "fab fa-bilibili"
-        subtitle: "解决没目标和无规划"
+        subtitle: "大学生职业规划与目标设定"
+        tag: "Career"
         url: "https://www.bilibili.com/video/BV1UA4y1Z7sN"
         target: "_blank"
+
       - name: "SuccessDiary_帅帅"
         icon: "fab fa-bilibili"
-        subtitle: "生活迷茫怎么办"
+        subtitle: "生活迷茫期应对与方向探索"
+        tag: "Career"
         url: "https://www.bilibili.com/video/BV1zT4y13785"
         target: "_blank"
+
       - name: "一万也"
         icon: "fab fa-bilibili"
-        subtitle: "大学生职业规划思路"
+        subtitle: "大学生职业规划思路与方法"
+        tag: "Career"
         url: "https://www.bilibili.com/video/BV1xP4y1T7Gc"
         target: "_blank"
 
   # -------- 组5：简历与面试 --------
+  # 定位：简历撰写、自我介绍、面试问答技巧
   - name: "简历与面试 | Resume & Interview"
     icon: "fa-solid fa-file-lines"
     items:
+
       - name: "取景框看世界"
         icon: "fab fa-bilibili"
-        subtitle: "最强简历攻略"
+        subtitle: "最强简历撰写攻略"
+        tag: "Resume"
         url: "https://www.bilibili.com/video/BV1NL4y1878J"
         target: "_blank"
+
       - name: "小Lin说"
         icon: "fab fa-bilibili"
-        subtitle: "简历“神奇4步法”"
+        subtitle: "简历写作「神奇 4 步法」"
+        tag: "Resume"
         url: "https://www.bilibili.com/video/BV1s64y1h7kS"
         target: "_blank"
+
       - name: "赤焰男人"
         icon: "fab fa-bilibili"
-        subtitle: "简历避坑指南"
+        subtitle: "简历常见错误与避坑指南"
+        tag: "Resume"
         url: "https://www.bilibili.com/video/BV1fT4y1a7qG"
         target: "_blank"
+
       - name: "李老师大学生辅导"
         icon: "fab fa-bilibili"
-        subtitle: "面试自我介绍攻略"
+        subtitle: "面试自我介绍高分攻略"
+        tag: "Interview"
         url: "https://www.bilibili.com/video/BV1sE411j7iq"
         target: "_blank"
+
       - name: "姜Dora在此"
         icon: "fab fa-bilibili"
-        subtitle: "面试自我介绍技巧"
+        subtitle: "面试自我介绍核心技巧"
+        tag: "Interview"
         url: "https://www.bilibili.com/video/BV1nR4y1K7JW"
         target: "_blank"
+
       - name: "鹅姐职场"
         icon: "fab fa-bilibili"
-        subtitle: "面试常问问题"
+        subtitle: "面试高频问题与应答策略"
+        tag: "Interview"
         url: "https://www.bilibili.com/video/BV1T7411F7FM"
         target: "_blank"
