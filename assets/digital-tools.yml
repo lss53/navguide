@@ -350,7 +350,7 @@ services:
       - name: "TinyPNG"
         icon: "fa-solid fa-image"
         subtitle: "智能 PNG / JPEG 无损压缩工具（中文版）"
-        tag: "Image"
+        # tag: "Image"
         url: "https://tinify.cn"
         target: "_blank"
         quick:
