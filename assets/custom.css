@@ -1,19 +1,35 @@
 @charset "UTF-8";
 
-/* ===== 修复1：Tag 遮住 Quick 链接（基于精确路径） ===== */
-html body div#app-mount div#app.theme-default #main-section .container .columns .column .card .card-content .tag {
-  margin-top: 1.5rem;   /* 先尝试1.5rem，如果不够再加大到2rem */
-  /* 如果 .tag 是 absolute 定位，改用 bottom: -1rem; 但先试 margin-top */
+/* ===== 修复1：解决 Tag 遮挡 Quick 链接 ===== */
+/* 方法：增大 tag 的 bottom 值，让它远离卡片底部，给 quicklinks 腾出空间 */
+body #main-section .tag {
+  bottom: 3rem !important;   /* 原为 1rem，增大到 3rem，可根据实际微调（如 2.5rem 或 3.5rem） */
 }
 
-/* ===== 修复2：Tag 悬停抖动（同样使用精确路径） ===== */
-html body div#app-mount div#app.theme-default #main-section .container .columns .column .card .card-content .tag {
-  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
-  padding: 0.25rem 0.5rem !important;   /* 固定内边距，数值请按实际调整 */
-  border: 1px solid transparent !important;
-  box-sizing: border-box !important;
+/* ===== 修复2：彻底消除 Tag 悬停抖动 ===== */
+/* 策略：不再改变 width 和 padding，改用 transform: scaleX() 实现展开效果，避免重排 */
+body #main-section .tag {
+  width: auto !important;            /* 固定宽度为 auto，但配合 transform 控制显示 */
+  padding: 0 .75em !important;       /* 固定内边距，不再变化 */
+  transform-origin: right center;    /* 从右侧展开 */
+  transition: transform 0.25s ease, background-color 0.25s, color 0.25s; /* 仅过渡 transform 和颜色，不触发重排 */
 }
-html body div#app-mount div#app.theme-default #main-section .container .columns .column .card .card-content .tag:hover {
-  transform: scale(1.05);   /* 微放大，若不需要改回 scale(1) */
-  /* 绝对不要改变 padding/margin/border/height/width */
+
+/* 默认状态：缩放到几乎不可见（保留小点） */
+body #main-section .tag {
+  transform: scaleX(0.05);           /* 极窄，类似原来的 3px 宽度 */
+}
+
+/* 悬停状态：完全展开 */
+body #main-section .card:hover .tag {
+  transform: scaleX(1) !important;   /* 展开到正常宽度，不再改变 width/padding */
+  /* 不再需要设置 width: auto 和 padding */
+}
+
+/* 确保文字在悬停时显示（原样保留，但不用改变 display） */
+body #main-section .tag .tag-text {
+  display: none;                     /* 默认隐藏 */
+}
+body #main-section .card:hover .tag .tag-text {
+  display: block;                    /* 悬停显示 */
 }
