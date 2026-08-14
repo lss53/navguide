@@ -133,7 +133,7 @@ services:
       - name: "TVBox接口"
         icon: "fa-solid fa-plug"
         subtitle: "TVBox 订阅源接口合集（GitHub）"
-        # tag: "Source"
+        tag: "Source"
         quick:
           - name: "1"
             url: "https://github.com/qist/tvbox"
