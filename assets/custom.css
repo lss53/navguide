@@ -1,35 +1,7 @@
-@charset "UTF-8";
-
-/* ===== 修复1：解决 Tag 遮挡 Quick 链接 ===== */
-/* 方法：增大 tag 的 bottom 值，让它远离卡片底部，给 quicklinks 腾出空间 */
+/* ===== 修复 Homer 主题 Tag 遮挡 Quick 链接及悬停抖动 ===== */
+/* 将 Tag 从底部上移，避免与快速链接区域重叠 */
+/* 覆盖默认的 transition: all，只过渡颜色和透明度，避免宽度和内边距变化引起抖动 */
 body #main-section .tag {
-  bottom: 3rem !important;   /* 原为 1rem，增大到 3rem，可根据实际微调（如 2.5rem 或 3.5rem） */
-}
-
-/* ===== 修复2：彻底消除 Tag 悬停抖动 ===== */
-/* 策略：不再改变 width 和 padding，改用 transform: scaleX() 实现展开效果，避免重排 */
-body #main-section .tag {
-  width: auto !important;            /* 固定宽度为 auto，但配合 transform 控制显示 */
-  padding: 0 .75em !important;       /* 固定内边距，不再变化 */
-  transform-origin: right center;    /* 从右侧展开 */
-  transition: transform 0.25s ease, background-color 0.25s, color 0.25s; /* 仅过渡 transform 和颜色，不触发重排 */
-}
-
-/* 默认状态：缩放到几乎不可见（保留小点） */
-body #main-section .tag {
-  transform: scaleX(0.05);           /* 极窄，类似原来的 3px 宽度 */
-}
-
-/* 悬停状态：完全展开 */
-body #main-section .card:hover .tag {
-  transform: scaleX(1) !important;   /* 展开到正常宽度，不再改变 width/padding */
-  /* 不再需要设置 width: auto 和 padding */
-}
-
-/* 确保文字在悬停时显示（原样保留，但不用改变 display） */
-body #main-section .tag .tag-text {
-  display: none;                     /* 默认隐藏 */
-}
-body #main-section .card:hover .tag .tag-text {
-  display: block;                    /* 悬停显示 */
+  bottom: 2.5rem; /* 距离卡片底部 2.5rem（原为 1rem），可根据实际微调 */
+  transition: opacity 0.3s ease, background-color 0.3s; /* 仅对透明度和背景色添加过渡，消除抖动 */
 }
