@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
-body #main-section .tag {
-  bottom: 3rem;
+/* ===== 修复1：Tag 遮住 Quick 链接（基于精确路径） ===== */
+html body div#app-mount div#app.theme-default #main-section .container .columns .column .card .card-content .tag {
+  margin-top: 1.5rem;   /* 先尝试1.5rem，如果不够再加大到2rem */
+  /* 如果 .tag 是 absolute 定位，改用 bottom: -1rem; 但先试 margin-top */
+}
+
+/* ===== 修复2：Tag 悬停抖动（同样使用精确路径） ===== */
+html body div#app-mount div#app.theme-default #main-section .container .columns .column .card .card-content .tag {
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease !important;
+  padding: 0.25rem 0.5rem !important;   /* 固定内边距，数值请按实际调整 */
+  border: 1px solid transparent !important;
+  box-sizing: border-box !important;
+}
+html body div#app-mount div#app.theme-default #main-section .container .columns .column .card .card-content .tag:hover {
+  transform: scale(1.05);   /* 微放大，若不需要改回 scale(1) */
+  /* 绝对不要改变 padding/margin/border/height/width */
 }
