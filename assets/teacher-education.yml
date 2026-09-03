@@ -95,8 +95,15 @@ services:
         icon: "fa-solid fa-file-powerpoint"
         subtitle: "高中生物精品课件库"
         tag: "Courseware"
-        url: "https://pan.quark.cn/s/efe19300d747"
-        target: "_blank"
+        quick:
+          - name: "必修1"
+            url: "https://pan.quark.cn/s/2a7211eeabf5"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
+          - name: "把脸"
+            url: "https://pan.quark.cn/s/efe19300d747"
+            icon: "fa-solid fa-arrow-up-right-from-square"
+            target: "_blank"
 
       - name: "多版本教材PPT课件"
         icon: "fa-solid fa-file-powerpoint"
